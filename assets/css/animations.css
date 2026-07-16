@@ -1,2 +1,13 @@
-/* Animasi profesional direncanakan untuk milestone 11; belum ada animasi aktif. */
+/* Hook animasi disimpan di file ini pada milestone 11.
+   Milestone 3 tidak mengaktifkan keyframe atau animation property. */
+
+.motion-hook {
+  /* Class aman untuk integrasi animasi berikutnya. */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-hook {
+    scroll-behavior: auto;
+  }
+}
 

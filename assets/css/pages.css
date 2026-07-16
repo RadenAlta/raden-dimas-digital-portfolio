@@ -1,2 +1,30 @@
-/* Tempat gaya khusus halaman pada milestone implementasi konten. */
+/* Style generik scaffold halaman; bukan desain halaman final. */
+.home-placeholder .empty-state {
+  border-color: var(--color-primary);
+}
+
+.page-content > .empty-state {
+  min-height: 12rem;
+  justify-content: center;
+}
+
+.supporting-page {
+  max-width: var(--container-narrow);
+}
+
+.page--error .page-header {
+  background: linear-gradient(135deg, var(--color-background-subtle), var(--color-surface));
+}
+
+.page--error .empty-state {
+  border-color: var(--color-danger);
+}
+
+.page--success .empty-state {
+  border-color: var(--color-success);
+}
+
+.privacy-content {
+  max-width: var(--content-reading-width);
+}
 

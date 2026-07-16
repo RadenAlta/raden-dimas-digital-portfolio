@@ -1,26 +1,98 @@
-/* Fondasi layout global; detail responsif dibuat pada milestone selanjutnya. */
-.site-header,
-main,
-.site-footer {
-  width: min(100% - (2 * var(--space-page)), var(--container-width));
+/* Layout primitives reusable. */
+.container {
+  width: min(100% - (2 * var(--page-gutter)), var(--container-default));
   margin-inline: auto;
 }
 
-.site-header,
-.site-footer {
-  padding-block: 1rem;
+.container--narrow {
+  max-width: var(--container-narrow);
 }
 
-main {
-  min-height: 60vh;
-  padding-block: 2rem;
+.container--wide {
+  max-width: var(--container-wide);
 }
 
-.nav-list {
+.section {
+  padding-block: var(--space-10);
+}
+
+.section--compact {
+  padding-block: var(--space-7);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.stack--sm { gap: var(--space-3); }
+.stack--lg { gap: var(--space-8); }
+
+.cluster {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  padding: 0;
-  list-style: none;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+.grid--2,
+.grid--3,
+.grid--4 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+
+.split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.content-wrapper {
+  width: min(100%, var(--content-reading-width));
+}
+
+.page-shell {
+  min-height: 62vh;
+}
+
+.page-header {
+  padding-block: var(--space-9) var(--space-7);
+  border-block-end: var(--border-width) solid var(--color-border);
+  background: linear-gradient(135deg, var(--color-background-subtle), var(--color-background));
+}
+
+.page-header .container {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.page-content {
+  padding-block: var(--space-8) var(--space-10);
+}
+
+.media-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.media-wrapper > :is(img, video, iframe) {
+  width: 100%;
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
 }
 

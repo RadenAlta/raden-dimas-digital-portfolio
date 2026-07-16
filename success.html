@@ -18,41 +18,59 @@
     <script src="assets/js/theme.js" defer></script>
     <script src="assets/js/animations.js" defer></script>
 </head>
-<body>
+<body class="site-body page--support page--success">
     <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
 
     <header class="site-header">
-      <a class="site-logo" href="index.html" aria-label="RD — Home">RD</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        Menu
-      </button>
-      <nav id="primary-navigation" aria-label="Navigasi utama">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="credentials.html">Credentials</a></li>
-          <li><a href="video.html">Video</a></li>
-          <li><a href="audio.html">Audio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" type="button">Ubah tema</button>
-      <!-- TODO_ASSET: Ganti dengan CV yang telah diverifikasi dan disetujui untuk publikasi. -->
-      <a class="cv-link" href="assets/documents/TODO_ASSET-cv-raden-dimas.pdf">Download CV (TODO)</a>
+      <div class="container site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="RD — Home">RD</a>
+        <button class="menu-toggle button button--ghost" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          Menu
+        </button>
+        <nav id="primary-navigation" class="site-nav" aria-label="Navigasi utama">
+          <ul class="site-nav__list">
+              <li><a class="site-nav__link" href="index.html">Home</a></li>
+              <li><a class="site-nav__link" href="about.html">About Me</a></li>
+              <li><a class="site-nav__link" href="projects.html">Projects</a></li>
+              <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+              <li><a class="site-nav__link" href="credentials.html">Credentials</a></li>
+              <li><a class="site-nav__link" href="video.html">Video</a></li>
+              <li><a class="site-nav__link" href="audio.html">Audio</a></li>
+              <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions cluster">
+          <button class="theme-toggle button button--ghost" type="button">Ubah tema</button>
+          <!-- TODO_ASSET: Ganti dengan CV yang telah diverifikasi dan disetujui untuk publikasi. -->
+          <a class="button button--secondary cv-link" href="assets/documents/TODO_ASSET-cv-raden-dimas.pdf">Download CV (TODO)</a>
+        </div>
+      </div>
     </header>
 
-    <main id="main-content">
-      <h1>Simulasi Berhasil</h1>
-      <!-- TODO: Konten lengkap akan ditambahkan pada milestone yang sesuai. -->
-      <p>Ini adalah halaman simulasi untuk alur formulir statis. Tidak ada pesan yang dikirim melalui email atau disimpan.</p>
+    <main id="main-content" class="page-shell">
+      <header class="page-header">
+        <div class="container">
+          <p class="eyebrow">Raden Dimas Digital Portfolio</p>
+          <h1>Simulasi Berhasil</h1>
+        </div>
+      </header>
+
+      <div class="container page-content supporting-page">
+        <!-- TODO: Konten lengkap akan ditambahkan pada milestone yang sesuai. -->
+        <div class="empty-state stack">
+          <p>Ini adalah halaman simulasi untuk alur formulir statis. Tidak ada pesan yang dikirim melalui email atau disimpan.</p>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Raden Dimas Taufik Rahmat. Proyek UAS Pemrograman Web I.</p>
-      <a href="privacy.html">Baca informasi privasi</a>
+      <div class="container site-footer__grid">
+        <p>&copy; 2026 Raden Dimas Taufik Rahmat. Proyek UAS Pemrograman Web I.</p>
+        <a href="privacy.html">Baca informasi privasi</a>
+      </div>
     </footer>
 </body>
 </html>
+
+
 
