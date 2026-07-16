@@ -18,16 +18,21 @@
     <script src="assets/js/theme.js" defer></script>
     <script src="assets/js/animations.js" defer></script>
 </head>
-<body class="site-body page--support page--error">
+<body id="top" class="site-body page--support page--error">
     <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
 
-    <header class="site-header">
+    <header class="site-header" data-site-header>
       <div class="container site-header__inner">
         <a class="site-brand" href="index.html" aria-label="RD — Home">RD</a>
-        <button class="menu-toggle button button--ghost" type="button" aria-expanded="false" aria-controls="primary-navigation">
-          Menu
+
+        <button class="menu-toggle button button--ghost" type="button"
+                aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Buka menu utama" data-menu-toggle>
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
         </button>
-        <nav id="primary-navigation" class="site-nav" aria-label="Navigasi utama">
+
+        <nav id="primary-navigation" class="site-nav" aria-label="Navigasi utama" data-site-nav>
           <ul class="site-nav__list">
               <li><a class="site-nav__link" href="index.html">Home</a></li>
               <li><a class="site-nav__link" href="about.html">About Me</a></li>
@@ -39,12 +44,21 @@
               <li><a class="site-nav__link" href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <div class="header-actions cluster">
-          <button class="theme-toggle button button--ghost" type="button">Ubah tema</button>
-          <!-- TODO_ASSET: Ganti dengan CV yang telah diverifikasi dan disetujui untuk publikasi. -->
-          <a class="button button--secondary cv-link" href="assets/documents/TODO_ASSET-cv-raden-dimas.pdf">Download CV (TODO)</a>
+          <button class="theme-toggle button button--ghost" type="button"
+                  aria-pressed="false" aria-label="Gunakan tema terang" data-theme-toggle>
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+            <span data-theme-label>Tema terang</span>
+          </button>
+          <!-- TODO_ASSET: Ubah menjadi link download setelah CV asli tersedia. -->
+          <button class="button button--secondary cv-placeholder" type="button" disabled>
+            Download CV — segera
+          </button>
         </div>
       </div>
+      <button class="nav-overlay" type="button" aria-label="Tutup menu utama"
+              data-nav-overlay hidden></button>
     </header>
 
     <main id="main-content" class="page-shell">
@@ -66,12 +80,45 @@
 
     <footer class="site-footer">
       <div class="container site-footer__grid">
-        <p>&copy; 2026 Raden Dimas Taufik Rahmat. Proyek UAS Pemrograman Web I.</p>
-        <a href="privacy.html">Baca informasi privasi</a>
+        <section class="site-footer__brand" aria-labelledby="footer-brand-title">
+          <h2 id="footer-brand-title" class="site-footer__title">
+            <span class="site-footer__mark" aria-hidden="true">RD</span>
+            Raden Dimas Digital Portfolio
+          </h2>
+          <p>Portofolio mahasiswa S1 Informatika Universitas Siber Asia. Fokus pembelajaran web, mobile, data, dan AI.</p>
+        </section>
+
+        <nav class="site-footer__nav" aria-labelledby="footer-quick-links">
+          <h2 id="footer-quick-links" class="site-footer__heading">Quick links</h2>
+          <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="site-footer__support" aria-labelledby="footer-support-title">
+          <h2 id="footer-support-title" class="site-footer__heading">Informasi</h2>
+          <ul class="site-footer__links">
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="#top" data-footer-to-top>Kembali ke atas</a></li>
+          </ul>
+          <!-- TODO: Tambahkan URL sosial hanya setelah dikonfirmasi. -->
+          <p class="site-footer__social-note">Tautan sosial akan ditambahkan.</p>
+        </section>
+
+        <p class="site-footer__copyright">
+          &copy; <time datetime="2026" data-current-year>2026</time>
+          Raden Dimas Taufik Rahmat. Proyek UAS Pemrograman Web I.
+        </p>
       </div>
     </footer>
+
+    <button class="back-to-top button button--icon" type="button"
+            aria-label="Kembali ke atas" data-back-to-top>
+      <span aria-hidden="true">↑</span>
+    </button>
 </body>
 </html>
-
-
-
