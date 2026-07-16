@@ -1,0 +1,26 @@
+/* Fondasi layout global; detail responsif dibuat pada milestone selanjutnya. */
+.site-header,
+main,
+.site-footer {
+  width: min(100% - (2 * var(--space-page)), var(--container-width));
+  margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+  padding-block: 1rem;
+}
+
+main {
+  min-height: 60vh;
+  padding-block: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+

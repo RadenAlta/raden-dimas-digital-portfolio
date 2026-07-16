@@ -1,0 +1,22 @@
+/* Fondasi komponen global; belum memuat desain komponen final. */
+.skip-link {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: -100vw;
+  padding: 0.75rem;
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+.skip-link:focus {
+  inset-inline-start: 0;
+}
+
+[aria-current="page"] {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+

@@ -1,0 +1,11 @@
+/* Fondasi variabel global. Sistem desain lengkap dibuat pada milestone berikutnya. */
+:root {
+  --color-background: #07111f;
+  --color-surface: #101c2c;
+  --color-text: #f4f7fb;
+  --color-muted: #b6c2d2;
+  --color-accent: #38d7ee;
+  --container-width: 70rem;
+  --space-page: 1rem;
+}
+

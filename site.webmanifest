@@ -1,0 +1,16 @@
+{
+  "name": "Raden Dimas Digital Portfolio",
+  "short_name": "RD Portfolio",
+  "start_url": "./index.html",
+  "display": "browser",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
