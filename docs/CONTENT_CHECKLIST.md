@@ -78,4 +78,7 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 - [x] Data sensitif, JSON mentah, identity hash, salt, proof, verification method, nomor peserta, dan riwayat pendidikan lama tidak dipublikasikan.
 - [x] Pengguna mengizinkan sertifikat Dicoding Bootcamp Batch 5 dan AKIRA 5 ditampilkan secara utuh, termasuk nomor yang tercetak pada gambar.
 - [x] Nomor pada kedua gambar tersebut tidak disalin menjadi metadata atau teks HTML baru.
-- [x] Gallery memiliki enam gambar credential publik.
+- [x] Pengguna mengizinkan halaman pertama sertifikat Bangkit ditampilkan secara utuh; halaman Student Learning Achievement tidak dipublikasikan.
+- [x] Google Certified Educator Level 1 dan Siswa Tersertifikasi Gemini — Universitas menggunakan gambar lokal dari PDF terkonfirmasi.
+- [x] PNG Dicoding dibuat ulang langsung dari halaman pertama PDF untuk memperbaiki rasio sumber.
+- [x] Gallery memiliki sembilan gambar credential publik.
