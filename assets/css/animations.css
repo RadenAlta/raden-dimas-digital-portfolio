@@ -20,6 +20,7 @@
   .profile-frame:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}.button:active:not(:disabled){transform:translateY(1px)}
 }
 @media (prefers-reduced-motion:reduce){
+  .home-hero__background-video{display:none}
   .motion-ready [data-reveal],[data-reveal]{opacity:1;transform:none;transition:none;transition-delay:0ms}
   .typing-text__cursor{display:none;animation:none}
   .gallery-dialog[open],.gallery-dialog[open]::backdrop,.form-error-summary:not([hidden]),.prepared-email:not([hidden]){animation:none}

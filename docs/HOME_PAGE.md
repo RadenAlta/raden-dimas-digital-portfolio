@@ -93,3 +93,11 @@ Typing animation, terminal loading screen, canvas network, scroll reveal, counte
 ## TODO Milestone 6
 
 Ikuti dokumen perencanaan berikutnya tanpa memperluas scope secara otomatis. Verifikasi data dan aset nyata sebelum mengembangkan halaman atau animasi selanjutnya.
+
+## Enhancement — Hero video background
+
+Home Hero memakai video dekoratif lokal `assets/videos/hero-binary-background.mp4` dengan poster `assets/images/backgrounds/hero-binary-background-poster.webp`. Sumber pengembangan berasal dari `C:/Users/raden/Downloads/17076-278405108_medium.mp4`: MP4/H.264, 1280×720 (16:9), 10 detik, 30 fps, 990.834 byte, satu track video, dan tanpa audio.
+
+Video hanya berada di Hero Home. Overlay dark membuat angka biner menjadi tekstur halus; overlay light lebih terang agar token teks light theme tetap terbaca. Tanpa JavaScript, poster tampil sebagai background. JavaScript hanya memutar video ketika MP4 didukung, tab terlihat, reduced motion tidak aktif, dan Save Data tidak aktif. Video dipause saat tab tersembunyi atau reduced motion aktif.
+
+Elemen bersifat dekoratif: `aria-hidden`, `tabindex="-1"`, muted, tanpa controls, tanpa caption/transkrip, dan tidak mengubah reading/focus order. `preload="metadata"` menjaga transfer awal tetap ringan. Sampel frame awal, tengah, dan akhir tidak menunjukkan watermark atau identitas pribadi. **TODO_LICENSE_CONFIRMATION:** sumber dan hak penggunaan harus dikonfirmasi sebelum deployment publik.

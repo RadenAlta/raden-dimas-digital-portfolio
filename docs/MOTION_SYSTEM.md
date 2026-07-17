@@ -11,3 +11,7 @@ Card interaksi hanya aktif pada pointer presisi dengan perpindahan maksimal 3 px
 Fungsi utama: `prefersReducedMotion`, `getRevealElements`, `revealAllElements`, `applyRevealHooks`, `initScrollReveal`, `renderStaticTypingText`, `initTypingText`, `handleMotionPreferenceChange`, dan `initMotionSystem`. Class utama: `.motion-ready`, `.is-revealed`, `.reveal-delay-1..4`, `.typing-text`, `.typing-text__output`, dan `.typing-text__cursor`.
 
 Matriks pengujian manual: JavaScript aktif/nonaktif, observer tidak tersedia, reduced motion berubah saat runtime, dua siklus typing, tab hidden/visible, filter Projects/Credentials/Gallery, dialog, Contact, kedua tema, keyboard, dan viewport 390/768/1440. TODO Milestone 12: audit lintas browser dan performa akhir; tidak diimplementasikan pada milestone ini.
+
+## Home Hero video
+
+`initHeroBackgroundVideo()` mengelola video dekoratif Home secara null-safe. `canPlayHeroBackgroundVideo()` memeriksa dukungan MP4, reduced motion, `navigator.connection?.saveData`, dan visibility. Promise dari `play()` selalu ditangani; penolakan membiarkan poster tampil tanpa Console error. Satu listener visibility mempause video pada tab hidden dan melanjutkan hanya saat semua syarat kembali terpenuhi. Perubahan preferensi motion diproses oleh handler motion yang sama. Tidak ada timer, `requestAnimationFrame`, network request JavaScript, atau storage baru.

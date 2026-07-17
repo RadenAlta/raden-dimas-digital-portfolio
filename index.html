@@ -80,6 +80,12 @@ Teknologi         : HTML5, CSS3, dan Vanilla JavaScript
 
     <main id="main-content" class="page-shell home-page">
       <section class="home-hero section" aria-labelledby="home-title">
+        <div class="home-hero__background" aria-hidden="true">
+          <video class="home-hero__background-video" data-hero-background-video muted loop playsinline preload="metadata" poster="assets/images/backgrounds/hero-binary-background-poster.webp" tabindex="-1">
+            <source src="assets/videos/hero-binary-background.mp4" type="video/mp4">
+          </video>
+          <div class="home-hero__background-overlay"></div>
+        </div>
         <div class="container home-hero__grid">
           <div class="home-hero__content stack">
             <p class="eyebrow">Hello World, saya</p>

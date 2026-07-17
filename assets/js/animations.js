@@ -3,6 +3,7 @@
   "use strict";
   const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
   let typingController = null;
+  let heroVideoController = null;
   const prefersReducedMotion = () => motionQuery.matches;
   const getRevealElements = () => [...document.querySelectorAll("[data-reveal]")];
   function revealAllElements() { document.documentElement.classList.remove("motion-ready"); getRevealElements().forEach((element) => element.classList.add("is-revealed")); }
@@ -31,7 +32,27 @@
     document.addEventListener("visibilitychange", () => document.hidden ? pauseTyping() : resumeTyping()); scheduleTypingStep(1000);
     return { pauseTyping, resumeTyping, stopTyping };
   }
-  function handleMotionPreferenceChange() { if (prefersReducedMotion()) { revealAllElements(); typingController?.stopTyping(); } }
-  function initMotionSystem() { try { initScrollReveal(); typingController = initTypingText(); motionQuery.addEventListener?.("change", handleMotionPreferenceChange); } catch { revealAllElements(); } }
+  function getHeroBackgroundVideo() { return document.querySelector("[data-hero-background-video]"); }
+  function canPlayHeroBackgroundVideo(video) { return Boolean(video && video.canPlayType("video/mp4") && !prefersReducedMotion() && !navigator.connection?.saveData && !document.hidden); }
+  function initHeroBackgroundVideo() {
+    const video = getHeroBackgroundVideo();
+    if (!video) return null;
+    let playPending = false;
+    const pauseHeroBackgroundVideo = () => { video.pause(); playPending = false; };
+    const playHeroBackgroundVideo = () => {
+      if (!canPlayHeroBackgroundVideo(video) || playPending || !video.paused) return;
+      playPending = true;
+      const playRequest = video.play();
+      if (playRequest?.then) playRequest.then(() => { playPending = false; }).catch(() => { playPending = false; video.pause(); });
+      else playPending = false;
+    };
+    const handleHeroVideoVisibility = () => document.hidden ? pauseHeroBackgroundVideo() : playHeroBackgroundVideo();
+    const handleHeroVideoMotionPreference = () => prefersReducedMotion() ? pauseHeroBackgroundVideo() : playHeroBackgroundVideo();
+    document.addEventListener("visibilitychange", handleHeroVideoVisibility);
+    playHeroBackgroundVideo();
+    return { playHeroBackgroundVideo, pauseHeroBackgroundVideo, handleHeroVideoMotionPreference };
+  }
+  function handleMotionPreferenceChange() { if (prefersReducedMotion()) { revealAllElements(); typingController?.stopTyping(); } heroVideoController?.handleHeroVideoMotionPreference(); }
+  function initMotionSystem() { try { initScrollReveal(); typingController = initTypingText(); heroVideoController = initHeroBackgroundVideo(); motionQuery.addEventListener?.("change", handleMotionPreferenceChange); } catch { revealAllElements(); heroVideoController?.pauseHeroBackgroundVideo(); } }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initMotionSystem, { once: true }); else initMotionSystem();
 })();

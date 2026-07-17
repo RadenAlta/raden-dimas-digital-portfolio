@@ -17,6 +17,7 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 | CV | `assets/documents/` | `cv-raden-dimas.pdf` | PDF accessible | A4, ukuran file ideal < 2 MB | TODO | About, Contact |
 | Favicon | `assets/images/icons/` | `favicon.svg`, `favicon-32.png` | SVG dan PNG | SVG + 32×32 | TODO | Semua halaman |
 | Social preview | `assets/images/backgrounds/` | `social-preview.webp` | WebP/JPEG/PNG | 1200×630 | TODO | Metadata semua halaman |
+| Hero binary background | `assets/videos/` dan `assets/images/backgrounds/` | `hero-binary-background.mp4`, `hero-binary-background-poster.webp` | MP4 H.264 + WebP | 1280×720, 16:9 | Tersedia untuk pengembangan; `TODO_LICENSE_CONFIRMATION` | Home Hero |
 
 ## Aturan penerimaan aset
 
@@ -39,3 +40,7 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 6. Audio, cover, dan transcript.
 7. CV yang telah ditinjau untuk informasi sensitif.
 8. Favicon dan social preview final.
+
+## Catatan Hero binary background
+
+Video final berukuran 990.834 byte, berdurasi 10 detik pada 30 fps, dan tidak memiliki audio. Poster WebP berasal dari frame awal stabil dengan ukuran 1280×720. Aset hanya boleh dipakai sebagai dekorasi Home Hero. Tidak ditemukan watermark atau identitas pribadi pada sampel visual, tetapi sumber dan lisensi belum dikonfirmasi; deployment publik harus menunggu konfirmasi hak penggunaan.

@@ -8,6 +8,7 @@ Website portofolio personal dan proyek UAS Pemrograman Web I milik Raden Dimas T
 - Dark/light theme, navigasi responsif, skip link, focus-visible, reduced motion, dan progressive enhancement.
 - Search/filter Projects, filter Credentials dan Gallery, Gallery lightbox, typing terbatas, form Contact mailto, serta halaman Privacy, Success, dan custom 404.
 - Aset sertifikat lokal; tanpa CDN, analytics, tracking, atau hotlink gambar.
+- Video angka biner lokal menjadi background dekoratif Home Hero dengan poster, reduced-motion fallback, pemeriksaan Save Data, dan pause saat tab tersembunyi.
 
 ## Halaman
 
@@ -32,6 +33,8 @@ Website tidak memakai analytics, database, cookie sendiri, atau penyimpanan data
 ## Deployment
 
 Struktur siap untuk GitHub Pages, Netlify, Vercel static hosting, atau server statis biasa. Belum ada remote Git maupun deployment yang dikonfirmasi. Production URL: `TODO_DEPLOYMENT_URL`. Canonical, `og:url`, sitemap final, dan robots sitemap directive harus ditambahkan setelah URL nyata tersedia.
+
+Video Hero masih berstatus `TODO_LICENSE_CONFIRMATION`; hak penggunaan harus dikonfirmasi sebelum deployment publik.
 
 ## Dokumentasi
 

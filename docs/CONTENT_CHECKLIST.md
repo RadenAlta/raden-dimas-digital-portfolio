@@ -95,3 +95,8 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 - [x] Google Certified Educator Level 1 dan Siswa Tersertifikasi Gemini — Universitas menggunakan gambar lokal dari PDF terkonfirmasi.
 - [x] PNG Dicoding dibuat ulang langsung dari halaman pertama PDF untuk memperbaiki rasio sumber.
 - [x] Gallery memiliki sembilan gambar credential publik.
+# Catatan aset dekoratif Home
+
+- Hero binary background tidak memuat informasi faktual atau identitas pribadi dan tidak memiliki audio.
+- Penggunaan lokal untuk pengembangan telah diterapkan hanya pada Home Hero.
+- `TODO_LICENSE_CONFIRMATION`: sumber serta hak penggunaan publik belum dikonfirmasi; jangan deploy aset sebelum konfirmasi.
