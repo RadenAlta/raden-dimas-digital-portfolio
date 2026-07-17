@@ -17,6 +17,16 @@
 - [x] Email publik: radendimas.work@gmail.com.
 - [x] LinkedIn publik: https://www.linkedin.com/in/raden-dimas-taufik-rahmat/.
 - [x] Instagram publik: https://www.instagram.com/radendimas_tr/ (label: @radendimas_tr).
+- [x] WhatsApp publik: 0822-6017-0684.
+- [x] WhatsApp URL: https://wa.me/6282260170684; format internasional 6282260170684 digunakan hanya pada URL.
+- [x] Pengguna mengizinkan nomor WhatsApp tersebut dipublikasikan.
+- [x] Footer menampilkan Email, WhatsApp, LinkedIn, GitHub, dan Instagram sebagai ikon saja; username sosial tidak ditampilkan secara visual.
+- [x] Persiapan Contact: kartu WhatsApp menampilkan nilai 0822-6017-0684, action “Chat melalui WhatsApp”, dan URL https://wa.me/6282260170684.
+- [x] GitHub username publik: RadenAlta.
+- [x] GitHub URL: https://github.com/RadenAlta.
+- [x] Pengguna mengizinkan akun GitHub tersebut ditampilkan secara publik.
+- [x] Footer menampilkan GitHub sebagai ikon; username RadenAlta tidak ditampilkan sebagai teks visual.
+- [x] Persiapan Contact: kartu GitHub menampilkan label “GitHub”, nilai “RadenAlta”, action “Lihat GitHub”, dan URL https://github.com/RadenAlta.
 
 ## Belum dikonfirmasi
 
