@@ -1,125 +1,47 @@
 # Raden Dimas Digital Portfolio
 
-Website portofolio pribadi profesional dan proyek UAS mata kuliah Pemrograman Web I. Proyek ini berupa website statis multi-page berbahasa Indonesia yang dibangun tanpa framework, backend, database, package manager, atau build tool.
+Website portofolio personal dan proyek UAS Pemrograman Web I milik Raden Dimas Taufik Rahmat (NIM 250401010460, S1 Informatika, Universitas Siber Asia). Website berbahasa Indonesia ini berupa multi-page static site tanpa framework, backend, database, dependency, package manager, atau build step.
 
-## Identitas mahasiswa
+## Teknologi dan fitur
 
-- Nama: Raden Dimas Taufik Rahmat
-- NIM: 250401010460
-- Kelas: IF209
-- Program studi: S1 Informatika
-- Universitas: Universitas Siber Asia
-- Mata kuliah: Pemrograman Web I
-- Dosen pengampu: Dr. Fauziah, S.Kom., MMSI.
+- Semantic HTML5, modern CSS3, dan vanilla JavaScript.
+- Dark/light theme, navigasi responsif, skip link, focus-visible, reduced motion, dan progressive enhancement.
+- Search/filter Projects, filter Credentials dan Gallery, Gallery lightbox, typing terbatas, form Contact mailto, serta halaman Privacy, Success, dan custom 404.
+- Aset sertifikat lokal; tanpa CDN, analytics, tracking, atau hotlink gambar.
 
-## Tujuan akademik
+## Halaman
 
-Proyek digunakan untuk mempraktikkan semantic HTML5, CSS3, vanilla JavaScript, struktur website multi-page, responsive design, aksesibilitas, serta pengelolaan aset lokal dalam bentuk yang mudah dipahami dan dijelaskan oleh mahasiswa.
+`index.html`, `about.html`, `projects.html`, `gallery.html`, `credentials.html`, `video.html`, `audio.html`, `contact.html`, `success.html`, `privacy.html`, dan `404.html`.
 
-## Teknologi
+## Struktur
 
-- Semantic HTML5
-- CSS3
-- Vanilla JavaScript
-- Static hosting
+HTML dan metadata berada di root. `assets/css/` menyimpan stylesheet, `assets/js/` menyimpan script, `assets/images/` menyimpan gambar lokal, sedangkan folder audio/video saat ini hanya mempertahankan placeholder. `docs/` berisi brief, keputusan halaman, QA, deployment guide, screenshot plan, dan laporan UAS.
 
-Tidak ada external dependency.
+## Menjalankan
 
-## Daftar halaman
+Gunakan Live Server dari root proyek, atau jalankan `python -m http.server 5500` lalu buka `http://localhost:5500/`. Tidak ada perintah build atau instalasi dependency.
 
-- `index.html` — Home
-- `about.html` — About Me
-- `projects.html` — Projects
-- `gallery.html` — Gallery
-- `credentials.html` — Credentials
-- `video.html` — Video
-- `audio.html` — Audio
-- `contact.html` — Contact
-- `success.html` — Simulasi hasil form statis
-- `privacy.html` — Privasi
-- `404.html` — Halaman tidak ditemukan
+## Batasan aktual
 
-## Struktur folder
+Form Contact tidak memiliki backend: data diproses lokal dan pengguna memilih membuka aplikasi email. Video dan audio asli belum tersedia, sehingga kedua halaman menampilkan fallback faktual tanpa media palsu atau autoplay. Foto profil, CV publik, dan social preview juga belum tersedia.
 
-```text
-/
-├── *.html
-├── favicon.svg
-├── site.webmanifest
-├── robots.txt
-├── sitemap.xml
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   │   ├── profile/
-│   │   ├── projects/
-│   │   ├── gallery/
-│   │   ├── certificates/
-│   │   ├── backgrounds/
-│   │   └── icons/
-│   ├── audio/
-│   ├── videos/
-│   └── documents/
-└── docs/
-    ├── screenshots/
-    ├── wireframes/
-    └── testing/
-```
+## Privasi
 
-Folder aset kosong dipertahankan dengan `.gitkeep`.
+Website tidak memakai analytics, database, cookie sendiri, atau penyimpanan data form. `localStorage` hanya digunakan untuk preferensi tema dengan key `raden-portfolio-theme`. Tautan eksternal berpindah ke layanan pihak ketiga dan dijelaskan pada halaman Privacy.
 
-## Menjalankan secara lokal
+## Deployment
 
-### Python HTTP server
+Struktur siap untuk GitHub Pages, Netlify, Vercel static hosting, atau server statis biasa. Belum ada remote Git maupun deployment yang dikonfirmasi. Production URL: `TODO_DEPLOYMENT_URL`. Canonical, `og:url`, sitemap final, dan robots sitemap directive harus ditambahkan setelah URL nyata tersedia.
 
-Dari root proyek, jalankan:
+## Dokumentasi
 
-```text
-python -m http.server 5500
-```
+- [Final QA](docs/FINAL_QA.md)
+- [Deployment Guide](docs/DEPLOYMENT_GUIDE.md)
+- [Screenshot Plan](docs/SCREENSHOT_PLAN.md)
+- [Laporan UAS](docs/UAS_REPORT.md)
+- [Motion System](docs/MOTION_SYSTEM.md)
+- [Content Checklist](docs/CONTENT_CHECKLIST.md)
 
-Lalu buka:
+## Lisensi
 
-```text
-http://localhost:5500
-```
-
-Hentikan server dengan `Ctrl+C`.
-
-### Live Server
-
-1. Buka root proyek di Visual Studio Code.
-2. Pasang ekstensi Live Server jika pengguna menyetujuinya.
-3. Klik kanan `index.html`, lalu pilih **Open with Live Server**.
-4. Gunakan alamat yang ditampilkan oleh Live Server.
-
-Live Server adalah alat pengembangan opsional dan bukan dependency proyek.
-
-## Aset yang belum tersedia
-
-- Foto profil dan versi kecil.
-- Gambar proyek dan galeri.
-- Gambar sertifikat.
-- Video, poster, caption, dan transcript.
-- Audio, cover, dan transcript.
-- CV PDF.
-- Social preview image.
-- Favicon final; saat ini menggunakan favicon inisial RD sederhana.
-
-## TODO
-
-- Integrasikan konten dan aset yang telah diverifikasi.
-- Ganti `TODO_ASSET` pada tautan CV setelah file tersedia.
-- Ganti `TODO_DOMAIN` pada `robots.txt` dan `sitemap.xml` setelah domain dikonfirmasi.
-- Bangun design system, navigasi interaktif, halaman lengkap, animasi, dan responsive design sesuai milestone.
-- Implementasikan formulir akademik statis pada milestone kontak.
-- Jalankan pengujian browser, keyboard, mobile, reduced motion, serta deployment.
-
-## Status proyek
-
-**Milestone 2 — Project Scaffold.**
-
-Scaffold dasar telah disiapkan, tetapi website belum selesai. Konten, desain lengkap, interaksi, media, form, animasi, dan pengujian production masih menunggu milestone berikutnya.
-
-Form kontak belum tersedia. Website tidak mengirim email dan tidak menyimpan data; halaman Success hanya akan menjadi bagian dari simulasi alur form statis.
+Belum ditentukan. Konten personal dan gambar sertifikat tetap milik pemiliknya; tidak ada lisensi open-source yang diberikan melalui repository ini.

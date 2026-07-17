@@ -1,10 +1,12 @@
 {
   "name": "Raden Dimas Digital Portfolio",
   "short_name": "RD Portfolio",
+  "description": "Portofolio digital Raden Dimas Taufik Rahmat sebagai mahasiswa S1 Informatika Universitas Siber Asia.",
   "start_url": "./index.html",
   "display": "browser",
   "background_color": "#07111f",
   "theme_color": "#07111f",
+  "lang": "id",
   "icons": [
     {
       "src": "favicon.svg",
@@ -13,4 +15,3 @@
     }
   ]
 }
-

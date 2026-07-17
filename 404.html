@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 — Halaman Tidak Ditemukan | Raden Dimas Digital Portfolio</title>
-    <meta name="description" content="Halaman bantuan ketika alamat pada Raden Dimas Digital Portfolio tidak ditemukan.">
+    <title>404 — Halaman Tidak Ditemukan | Raden Dimas</title>
+    <meta name="description" content="Panduan navigasi ketika halaman yang dicari tidak tersedia di Raden Dimas Digital Portfolio.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 — Halaman Tidak Ditemukan | Raden Dimas">
+    <meta property="og:description" content="Panduan navigasi ketika halaman yang dicari tidak tersedia di Raden Dimas Digital Portfolio.">
+    <meta property="og:site_name" content="Raden Dimas Digital Portfolio">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary">
+    <!-- TODO_DEPLOYMENT_URL: Tambahkan canonical dan og:url setelah URL produksi dikonfirmasi. -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="assets/css/variables.css">
@@ -62,20 +69,36 @@
     </header>
 
     <main id="main-content" class="page-shell">
-      <header class="page-header">
-        <div class="container">
-          <p class="eyebrow">Raden Dimas Digital Portfolio</p>
-          <h1>404 — Halaman Tidak Ditemukan</h1>
+      <section class="error-page" aria-labelledby="error-title">
+        <div class="container error-page__layout">
+          <div class="error-page__content stack">
+            <p class="eyebrow">Halaman Tidak Ditemukan</p>
+            <p class="error-page__code" aria-hidden="true">404</p>
+            <h1 id="error-title">Halaman Tidak Tersedia</h1>
+            <p class="error-page__description">Halaman yang Anda cari mungkin telah dipindahkan, alamatnya tidak tepat, atau belum tersedia.</p>
+            <p>Periksa kembali alamat halaman atau gunakan navigasi yang tersedia.</p>
+            <div class="cluster error-page__actions" aria-label="Tindakan pemulihan">
+              <a class="button button--primary" href="index.html">Kembali ke Home</a>
+              <a class="button button--secondary" href="projects.html">Lihat Projects</a>
+              <a class="button button--ghost" href="contact.html">Hubungi Saya</a>
+            </div>
+          </div>
+          <aside class="error-page__help card stack" aria-labelledby="helpful-links-title">
+            <h2 id="helpful-links-title">Tautan yang mungkin membantu</h2>
+            <nav aria-label="Tautan bantuan halaman 404">
+              <ul class="error-page__links">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="credentials.html">Credentials</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+              </ul>
+            </nav>
+            <p class="notice">Jika masalah berlanjut, gunakan halaman Contact untuk memberi tahu Raden Dimas.</p>
+          </aside>
         </div>
-      </header>
-
-      <div class="container page-content supporting-page">
-        <!-- TODO: Konten lengkap akan ditambahkan pada milestone yang sesuai. -->
-        <div class="empty-state stack">
-          <p>Halaman yang Anda cari tidak tersedia.</p>
-          <a class="button button--primary" href="index.html">Kembali ke Home</a>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="site-footer">

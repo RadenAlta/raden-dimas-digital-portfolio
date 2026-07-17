@@ -1,16 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- TODO_DOMAIN: Ganti setelah domain produksi dikonfirmasi. -->
-  <url><loc>https://TODO_DOMAIN/index.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/about.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/projects.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/gallery.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/credentials.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/video.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/audio.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/contact.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/success.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/privacy.html</loc></url>
-  <url><loc>https://TODO_DOMAIN/404.html</loc></url>
+  <!-- TODO_DEPLOYMENT_URL: Tambahkan URL absolut halaman publik setelah URL produksi dikonfirmasi. -->
 </urlset>
-
