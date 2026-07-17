@@ -58,6 +58,10 @@
 }
 
 @media (min-width: 64rem) {
+  :root {
+    --sticky-header-offset: 6rem;
+  }
+
   .portfolio-summary,
   .project-process { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: var(--space-10); }
 

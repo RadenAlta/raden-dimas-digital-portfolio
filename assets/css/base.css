@@ -15,6 +15,11 @@ html {
   text-size-adjust: 100%;
 }
 
+/* Menjaga target navigasi internal tetap terlihat di bawah header sticky. */
+:where([id]) {
+  scroll-margin-block-start: var(--sticky-header-offset);
+}
+
 body,
 h1,
 h2,
@@ -239,4 +244,3 @@ pre code {
     scroll-behavior: auto;
   }
 }
-
