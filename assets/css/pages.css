@@ -72,3 +72,44 @@
 .journey-preview h3 { font-size: var(--font-size-md); }
 .home-cta { background: linear-gradient(135deg, var(--color-surface), var(--color-background-subtle)); }
 .home-cta__inner { display: grid; gap: var(--space-7); align-items: center; padding-block: var(--space-7); }
+
+/* About — Milestone 6. */
+.about-hero p:last-child { color: var(--color-text-muted); font-size: var(--font-size-md); }
+.breadcrumb li[aria-current="page"]::before { margin-inline-end: var(--space-2); color: var(--color-text-muted); content: "/"; }
+.about-overview, .about-story, .education-layout, .career-direction__grid { display: grid; gap: var(--space-8); }
+.about-profile { min-height: 22rem; }
+.profile-details dl, .education-card dl, .language-list { display: grid; gap: var(--space-3); }
+.profile-details dl div, .education-card dl div, .language-list div { display: grid; gap: var(--space-1); padding-block-end: var(--space-3); border-block-end: var(--border-width) solid var(--color-border); }
+.profile-details dt, .education-card dt, .language-list dt { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.profile-details dd, .education-card dd, .language-list dd { font-weight: var(--font-weight-semibold); }
+.about-story > .stack { max-width: var(--content-reading-width); }
+.values-grid, .about-technology-groups, .soft-skills-grid, .profile-support-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+.value-card { display: grid; align-content: start; gap: var(--space-3); }
+.value-card > span { color: var(--color-primary); font-family: var(--font-mono); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
+.education-card { display: grid; gap: var(--space-5); }
+.education-card .badge { color: var(--color-success); }
+.journey-timeline { padding: 0; list-style: none; }
+.journey-item { position: relative; display: grid; gap: var(--space-3); padding-inline-start: var(--space-7); }
+.journey-item::before { position: absolute; inset-block: 0; inset-inline-start: 0.4rem; width: var(--border-width-strong); background: var(--color-border-strong); content: ""; }
+.journey-item::after { position: absolute; inset-block-start: 0.35rem; inset-inline-start: 0; width: 0.9rem; aspect-ratio: 1; border: var(--border-width-strong) solid var(--color-primary); border-radius: var(--radius-full); background: var(--color-background); content: ""; }
+.journey-item > time { color: var(--color-primary); font-weight: var(--font-weight-semibold); }
+.journey-item article { display: grid; gap: var(--space-3); }
+.skills-table { min-width: 52rem; }
+.skills-table caption { padding: var(--space-4); color: var(--color-text-muted); font-size: var(--font-size-sm); text-align: start; }
+.skills-table thead { background: var(--color-surface-elevated); }
+.skills-table tbody tr:last-child > * { border-block-end: 0; }
+.skills-table th[scope="row"] { color: var(--color-primary); }
+.about-technology-groups .card { display: grid; gap: var(--space-4); }
+.about-technology-groups .tag-list li { padding: var(--space-1) var(--space-3); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-full); background: var(--color-surface-elevated); color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.soft-skills-grid { padding: 0; list-style: none; }
+.soft-skills-grid li { display: grid; gap: var(--space-2); padding: var(--space-5); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
+.soft-skills-grid li + li { margin: 0; }
+.soft-skills-grid span { color: var(--color-text-muted); }
+.profile-support-grid > div { display: grid; align-content: start; gap: var(--space-6); }
+.interests-grid { display: grid; gap: var(--space-5); }
+.interests-grid article { padding-inline-start: var(--space-4); border-inline-start: var(--border-width-strong) solid var(--color-secondary); }
+.interests-grid article h3 { margin-block-end: var(--space-2); font-size: var(--font-size-md); }
+.career-direction ol { display: grid; gap: var(--space-2); }
+.about-cta { background: linear-gradient(135deg, var(--color-surface), var(--color-background-subtle)); }
+.about-cta__inner { display: grid; gap: var(--space-7); align-items: center; }
+.about-cta__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }

@@ -1,5 +1,12 @@
 /* Responsive foundation mobile-first. */
 @media (min-width: 40rem) {
+  .about-overview { grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 1.2fr); }
+
+  .values-grid,
+  .about-technology-groups,
+  .soft-skills-grid,
+  .profile-support-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
   .highlight-grid,
   .focus-grid,
   .project-preview-grid,
@@ -48,6 +55,16 @@
 }
 
 @media (min-width: 64rem) {
+  .about-story,
+  .education-layout,
+  .career-direction__grid { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: var(--space-10); }
+
+  .values-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+  .about-technology-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+  .about-cta__inner { grid-template-columns: minmax(0, 1fr) auto; }
+
   .home-hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.95fr); }
 
   .about-preview,

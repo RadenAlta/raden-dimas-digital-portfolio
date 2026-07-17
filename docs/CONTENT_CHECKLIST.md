@@ -14,6 +14,9 @@
 - [x] Area branding: web development, mobile development, data dan AI, serta pengelolaan teknologi dan sistem informasi.
 - [x] Tagline awal: Informatics Student · Web Developer · Data & AI Enthusiast.
 - [x] Bahasa utama: Indonesia.
+- [x] Email publik: radendimas.work@gmail.com.
+- [x] LinkedIn publik: https://www.linkedin.com/in/raden-dimas-taufik-rahmat/.
+- [x] Instagram publik: https://www.instagram.com/radendimas_tr/ (label: @radendimas_tr).
 
 ## Belum dikonfirmasi
 
@@ -23,8 +26,8 @@
 - [ ] `TODO`: sertifikat, penerbit, tanggal, URL verifikasi, dan credential ID.
 - [ ] `TODO`: pengalaman organisasi, kerja, freelance, atau volunteer.
 - [ ] `TODO`: aktivitas/pencapaian akademik.
-- [ ] `TODO`: alamat email publik dan metode kontak lain.
-- [ ] `TODO`: URL sosial dan platform yang ingin ditampilkan.
+- [ ] `TODO`: metode kontak lain yang ingin ditampilkan.
+- [ ] `TODO`: URL sosial lain yang ingin ditampilkan.
 - [ ] `TODO`: isi galeri dan caption.
 - [ ] `TODO`: isi, deskripsi, caption, dan transcript video.
 - [ ] `TODO`: naskah dan transcript audio.
