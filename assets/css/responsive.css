@@ -210,3 +210,5 @@
 }
 @media (max-width:1023px){.credential-grid,.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:639px){.credential-grid,.gallery-grid{grid-template-columns:1fr}.filter-bar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.5rem}.filter-bar .button{flex:0 0 auto}.gallery-dialog{width:calc(100vw - 1.5rem)}}
+@media (max-width: 63.9375rem) { .media-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 39.9375rem) { .media-card-grid { grid-template-columns: 1fr; } .video-placeholder, .audio-placeholder { min-height: 14rem; } }

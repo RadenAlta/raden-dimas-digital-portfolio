@@ -20,6 +20,9 @@
 
 ## Belum dikonfirmasi
 
+- [ ] `TODO_MEDIA`: screen recording Milestone 9 disebutkan, tetapi file belum tersedia untuk pemeriksaan metadata, isi, audio, dan keamanan publikasi.
+- [ ] `TODO_MEDIA`: file audio khusus, bahasa, durasi, dan transkrip belum tersedia.
+
 - [ ] `TODO`: bio panjang dan bio singkat.
 - [ ] `TODO`: daftar skill dan level kualitatifnya.
 - [ ] `TODO`: proyek, deskripsi, teknologi, tanggal, gambar, dan tautan.
