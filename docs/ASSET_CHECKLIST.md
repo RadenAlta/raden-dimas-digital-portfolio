@@ -17,7 +17,7 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 | CV | `assets/documents/` | `cv-raden-dimas.pdf` | PDF accessible | A4, ukuran file ideal < 2 MB | TODO | About, Contact |
 | Favicon | `assets/images/icons/` | `favicon.svg`, `favicon-32.png` | SVG dan PNG | SVG + 32×32 | TODO | Semua halaman |
 | Social preview | `assets/images/backgrounds/` | `social-preview.webp` | WebP/JPEG/PNG | 1200×630 | TODO | Metadata semua halaman |
-| Hero binary background | `assets/videos/` dan `assets/images/backgrounds/` | `hero-binary-background.mp4`, `hero-binary-background-poster.webp` | MP4 H.264 + WebP | 1280×720, 16:9 | Tersedia untuk pengembangan; `TODO_LICENSE_CONFIRMATION` | Home Hero |
+| Hero binary background | `assets/videos/` dan `assets/images/backgrounds/` | `hero-binary-background.mp4`, `hero-binary-background-poster.webp` | MP4 H.264 + WebP | 1280×720, 16:9 | `LICENSE_CONFIRMED_FOR_PUBLIC_USE` | Home Hero |
 
 ## Aturan penerimaan aset
 

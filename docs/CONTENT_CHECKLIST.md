@@ -99,4 +99,4 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 
 - Hero binary background tidak memuat informasi faktual atau identitas pribadi dan tidak memiliki audio.
 - Penggunaan lokal untuk pengembangan telah diterapkan hanya pada Home Hero.
-- `TODO_LICENSE_CONFIRMATION`: sumber serta hak penggunaan publik belum dikonfirmasi; jangan deploy aset sebelum konfirmasi.
+- `LICENSE_CONFIRMED_FOR_PUBLIC_USE`: pemilik project mengonfirmasi bahwa video angka biner diizinkan untuk digunakan secara gratis pada website publik. Video digunakan sebagai background dekoratif Home Hero, tidak memiliki audio, dan tidak memuat data pribadi. Atribusi tidak dicantumkan karena tidak diwajibkan berdasarkan konfirmasi pemilik project. Bukti atau URL sumber dapat ditambahkan kemudian bila tersedia.
