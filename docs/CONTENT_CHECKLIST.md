@@ -69,3 +69,10 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 8. CV final dan apakah boleh diunduh publik.
 9. Preferensi call-to-action utama dan urutan halaman di navigasi.
 10. Persetujuan copy final sebelum deployment.
+# Konfirmasi Milestone 8 — Credentials dan Gallery
+
+- [x] Sembilan credential dan data issuer, kategori, periode/tanggal, durasi, serta status yang ditampilkan telah dikonfirmasi.
+- [x] Google Certified Educator Level 1: diterbitkan 21 November 2025, berlaku hingga 21 November 2028, URL verifikasi Accredible terkonfirmasi.
+- [x] Siswa Tersertifikasi Gemini — Universitas: diterbitkan 21 November 2025, berlaku hingga 21 November 2028, URL verifikasi Accredible terkonfirmasi.
+- [x] Kedua credential Google dipertahankan sebagai item terpisah.
+- [x] Data sensitif, JSON mentah, identity hash, salt, proof, verification method, nomor peserta, dan riwayat pendidikan lama tidak dipublikasikan.

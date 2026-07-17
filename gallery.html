@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Raden Dimas Digital Portfolio</title>
-    <meta name="description" content="Halaman galeri pada Raden Dimas Digital Portfolio.">
+    <title>Gallery Raden Dimas — Digital Portfolio</title>
+    <meta name="description" content="Dokumentasi visual sertifikat dan perjalanan pembelajaran Raden Dimas Taufik Rahmat.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="assets/css/variables.css">
@@ -65,16 +65,27 @@
     <main id="main-content" class="page-shell">
       <header class="page-header">
         <div class="container">
-          <p class="eyebrow">Raden Dimas Digital Portfolio</p>
+          <p class="eyebrow">Dokumentasi Visual</p>
           <h1>Gallery</h1>
+          <p>Kumpulan visual sertifikat terpilih dan dokumentasi perjalanan pembelajaran.</p>
+          <nav aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Gallery</span></nav>
         </div>
       </header>
 
-      <div class="container page-content ">
-        <!-- TODO: Konten lengkap akan ditambahkan pada milestone yang sesuai. -->
-        <div class="empty-state stack">
-          <p>Aset galeri masih berstatus TODO_ASSET dan belum tersedia.</p>
+      <div class="container page-content">
+        <section aria-labelledby="gallery-intro"><h2 id="gallery-intro">Visual terpilih</h2><p>Galeri hanya menampilkan gambar lokal yang telah diperiksa dan aman untuk publikasi.</p></section>
+        <div class="filter-bar gallery-filters" aria-label="Filter galeri"><button class="button button--secondary" type="button" data-gallery-filter="all" aria-pressed="true">Semua</button><button class="button button--secondary" type="button" data-gallery-filter="credentials" aria-pressed="false">Credentials</button><button class="button button--secondary" type="button" data-gallery-filter="projects" aria-pressed="false">Projects</button><button class="button button--secondary" type="button" data-gallery-filter="learning" aria-pressed="false">Learning Activities</button></div>
+        <p id="gallery-result-count" class="gallery-result" aria-live="polite" aria-atomic="true">Menampilkan 4 gambar</p>
+        <noscript><p>Filter dan tampilan gambar besar membutuhkan JavaScript. Seluruh gambar tetap tersedia di halaman.</p></noscript>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-gallery-category="credentials"><div class="gallery-item__media"><img src="assets/images/certificates/bdt-2026-participation.png" alt="Sertifikat partisipasi BDT 2026" width="1600" height="1131" loading="lazy"></div><figcaption><span>Credentials · 2026</span><h2>Badan Ekraf Digital Talent 2026</h2><button class="button button--secondary" type="button" data-gallery-open data-image="assets/images/certificates/bdt-2026-participation.png" data-alt="Sertifikat partisipasi Badan Ekraf Digital Talent 2026" data-title="Badan Ekraf Digital Talent 2026" data-caption="Sertifikat partisipasi program tahun 2026.">Lihat gambar besar</button></figcaption></figure>
+          <figure class="gallery-item" data-gallery-category="credentials"><div class="gallery-item__media"><img src="assets/images/certificates/bdt-2026-productivity-ai-graduation.png" alt="Sertifikat Productivity with AI Bootcamp" width="1600" height="1131" loading="lazy"></div><figcaption><span>Credentials · 2026</span><h2>Productivity with AI Bootcamp</h2><button class="button button--secondary" type="button" data-gallery-open data-image="assets/images/certificates/bdt-2026-productivity-ai-graduation.png" data-alt="Sertifikat kelulusan Productivity with AI Bootcamp" data-title="Productivity with AI Bootcamp" data-caption="Sertifikat kelulusan program Badan Ekraf Digital Talent 2026.">Lihat gambar besar</button></figcaption></figure>
+          <figure class="gallery-item" data-gallery-category="credentials"><div class="gallery-item__media"><img src="assets/images/certificates/microsoft-elevate-data-ai-2025.png" alt="Sertifikat Microsoft Elevate Data dan AI" width="1600" height="1131" loading="lazy"></div><figcaption><span>Credentials · 2025</span><h2>Microsoft Elevate Data &amp; AI</h2><button class="button button--secondary" type="button" data-gallery-open data-image="assets/images/certificates/microsoft-elevate-data-ai-2025.png" data-alt="Sertifikat program Microsoft Elevate Data dan AI" data-title="Microsoft Elevate Data &amp; AI" data-caption="Program Microsoft Fabric dan Generative AI dengan Microsoft Azure.">Lihat gambar besar</button></figcaption></figure>
+          <figure class="gallery-item" data-gallery-category="credentials"><div class="gallery-item__media"><img src="assets/images/certificates/international-millennial-summit-2023.png" alt="Sertifikat International Millennial Summit" width="1600" height="1131" loading="lazy"></div><figcaption><span>Credentials · 2023</span><h2>International Millennial Summit</h2><button class="button button--secondary" type="button" data-gallery-open data-image="assets/images/certificates/international-millennial-summit-2023.png" data-alt="Certificate of Appreciation International Millennial Summit" data-title="International Millennial Summit" data-caption="Certificate of Appreciation untuk kegiatan di Kuala Lumpur, Malaysia.">Lihat gambar besar</button></figcaption></figure>
         </div>
+        <section class="empty-state gallery-empty-state" data-gallery-empty hidden><h2>Dokumentasi belum ditemukan</h2><p>Kategori ini belum memiliki gambar publik yang aman.</p><button class="button button--primary" type="button" data-gallery-reset>Tampilkan semua gambar</button></section>
+        <dialog class="gallery-dialog" data-gallery-dialog aria-labelledby="gallery-dialog-title"><button class="button button--secondary" type="button" data-dialog-close>Tutup</button><h2 id="gallery-dialog-title" data-dialog-title>Pratinjau gambar</h2><img class="gallery-dialog__image" src="assets/images/certificates/bdt-2026-participation.png" alt=""><p data-dialog-caption></p></dialog>
+        <section class="section-cta gallery-cta"><h2>Jelajahi lebih lanjut</h2><div class="cluster"><a class="button button--primary" href="credentials.html">Lihat Credentials</a><a class="button button--secondary" href="projects.html">Lihat Projects</a></div></section>
       </div>
     </main>
 
