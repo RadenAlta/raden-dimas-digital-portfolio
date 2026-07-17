@@ -1,0 +1,95 @@
+# Home Page — Milestone 5
+
+## Tujuan
+
+Home memperkenalkan Raden Dimas Taufik Rahmat sebagai mahasiswa aktif S1 Informatika Universitas Siber Asia, memberi gambaran arah pembelajaran, dan menyediakan jalur ke About, Projects, serta Contact.
+
+## Struktur section
+
+1. Hero dan visual profil.
+2. Profile highlights.
+3. About preview.
+4. Areas of focus.
+5. Featured projects.
+6. Learning journey preview.
+7. Technology and tools preview.
+8. Professional CTA.
+9. Footer global.
+
+## Konten terverifikasi
+
+Nama, program studi, Universitas Siber Asia, status mahasiswa aktif sejak 2025, domisili Bogor, dan fokus web, mobile, data, serta AI berasal dari `CONTENT_CHECKLIST.md` dan instruksi Milestone 5. Pendidikan formal hanya menampilkan S1 Informatika di Universitas Siber Asia. Bangkit Academy ditempatkan sebagai program pembelajaran, bukan pendidikan formal.
+
+## Hero structure
+
+Hero memakai dua kolom pada desktop dan satu kolom pada mobile. Kolom utama berisi satu-satunya `h1`, deskripsi, tagline, status belajar, CTA, serta description list. Kolom visual berisi placeholder profil dan terminal card.
+
+## Profile placeholder
+
+Placeholder memakai monogram RD dan grid CSS, bukan foto atau gambar eksternal. Komentar `TODO_ASSET` mencatat target `assets/images/profile/raden-dimas-profile.webp` agar mudah diganti setelah foto asli tersedia.
+
+## Terminal card
+
+Terminal adalah snapshot teks statis dalam `pre`/`code`, bukan input atau perintah interaktif. Dekorasi titik tidak dibacakan screen reader dan isi faktual tetap dapat dibaca tanpa CSS atau JavaScript.
+
+## Focus areas
+
+Empat kartu mencakup Web Development, Mobile Development, Data & Analytics, dan Artificial Intelligence. Seluruh istilah menggunakan konteks mempelajari atau memperdalam, tanpa klaim ahli dan tanpa persentase.
+
+## Featured projects
+
+Home menampilkan Digital Portfolio, TOEFL Prep+, Sistem Basis Data Perpustakaan, dan Data Clustering Analysis sesuai status yang ditentukan. Visual kartu berupa placeholder abstrak CSS. Semua detail menuju `projects.html`; tidak ada repository atau demo palsu.
+
+## Learning journey
+
+Timeline membedakan Bangkit Academy sebagai program pembelajaran tahun 2024, UNSIA sebagai pendidikan formal sejak 2025, dan perluasan pembelajaran pada 2026 tanpa menyebut program yang belum dikonfirmasi.
+
+## Technology preview
+
+Teknologi dikelompokkan menjadi Web, Mobile, Data, dan Tools. Daftar menggunakan tag teks tanpa logo eksternal, level expert, persentase, atau angka statistik.
+
+## CTA
+
+CTA mengundang diskusi dan kolaborasi proyek pembelajaran. Tautan hanya menuju halaman lokal Contact dan Projects, tanpa klaim ketersediaan kerja profesional.
+
+## Responsive behavior
+
+Layout mobile-first. Pada mobile seluruh bagian satu kolom, pada tablet kartu menjadi dua kolom, dan pada desktop hero menjadi dua kolom serta kelompok fokus menjadi empat kolom. Terminal membatasi overflow pada area `pre`, bukan pada halaman.
+
+## Accessibility decisions
+
+- Tepat satu `h1`; heading section memakai `h2` dan judul kartu memakai `h3`.
+- Section bernama melalui heading dan `aria-labelledby`.
+- SVG serta placeholder visual dekoratif memakai `aria-hidden="true"`.
+- Status disampaikan sebagai teks, bukan warna saja.
+- Semua CTA adalah link native dengan focus-visible global.
+- Konten tetap lengkap tanpa CSS dan JavaScript.
+- Tidak ada autoplay atau animasi aktif pada milestone ini.
+
+## Data attribute animasi berikutnya
+
+`data-typing-text` menandai teks yang dapat dikembangkan menjadi typing animation. `data-typing-words` menyimpan urutan Web Development, Mobile Development, Data Science, dan Artificial Intelligence. Fallback “Web Development” tetap tampil; hook belum dijalankan oleh JavaScript.
+
+## Aset yang masih TODO
+
+- Foto profil asli: `assets/images/profile/raden-dimas-profile.webp`.
+- Domain produksi untuk `og:url` (`TODO_DOMAIN`).
+- Screenshot proyek asli setelah aset dan izin publikasi tersedia.
+- CV asli tetap memakai placeholder global nonaktif.
+
+## Belum diimplementasikan
+
+Typing animation, terminal loading screen, canvas network, scroll reveal, counter, floating card, dan animasi kompleks lain belum dibuat. Halaman About dan Projects belum dikembangkan lebih lanjut pada milestone ini.
+
+## Cara menguji
+
+1. Jalankan server lokal dari root proyek.
+2. Buka `index.html` pada 390×844, 768×1024, dan 1440×900.
+3. Periksa dark/light theme, menu mobile, keyboard Tab/Escape, focus indicator, terminal, dan tidak adanya overflow horizontal.
+4. Matikan JavaScript dan pastikan navigasi serta seluruh teks Home tetap tersedia.
+5. Aktifkan reduced motion dan pastikan tidak ada gerakan non-esensial.
+6. Periksa Console dan Network untuk error atau aset 404.
+
+## TODO Milestone 6
+
+Ikuti dokumen perencanaan berikutnya tanpa memperluas scope secara otomatis. Verifikasi data dan aset nyata sebelum mengembangkan halaman atau animasi selanjutnya.

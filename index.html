@@ -18,8 +18,12 @@ Teknologi         : HTML5, CSS3, dan Vanilla JavaScript
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Raden Dimas Digital Portfolio</title>
-    <meta name="description" content="Halaman utama Raden Dimas Digital Portfolio, proyek UAS Pemrograman Web I.">
+    <title>Raden Dimas Taufik Rahmat — Digital Portfolio</title>
+    <meta name="description" content="Portofolio digital Raden Dimas Taufik Rahmat, mahasiswa S1 Informatika Universitas Siber Asia yang mempelajari web development, mobile development, data, dan artificial intelligence.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Raden Dimas Taufik Rahmat — Digital Portfolio">
+    <meta property="og:description" content="Portofolio mahasiswa S1 Informatika yang mempelajari web, mobile, data, dan artificial intelligence.">
+    <!-- TODO_DOMAIN: Tambahkan og:url setelah domain produksi dikonfirmasi. -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="assets/css/variables.css">
@@ -76,20 +80,67 @@ Teknologi         : HTML5, CSS3, dan Vanilla JavaScript
               data-nav-overlay hidden></button>
     </header>
 
-    <main id="main-content" class="page-shell">
-      <header class="page-header">
-        <div class="container">
-          <p class="eyebrow">Raden Dimas Digital Portfolio</p>
-          <h1>Raden Dimas Digital Portfolio</h1>
-        </div>
-      </header>
+    <main id="main-content" class="page-shell home-page">
+      <section class="home-hero section" aria-labelledby="home-title">
+        <div class="container home-hero__grid">
+          <div class="home-hero__content stack">
+            <p class="eyebrow">Hello World, saya</p>
+            <h1 id="home-title">Raden Dimas Taufik Rahmat</h1>
+            <p class="hero-description">Mahasiswa S1 Informatika di Universitas Siber Asia yang berfokus mempelajari pengembangan web, aplikasi mobile, pengolahan data, dan kecerdasan buatan.</p>
+            <p class="hero-tagline">Mahasiswa Informatika · Web &amp; Mobile Development · Data &amp; AI Enthusiast</p>
+            <p class="badge--status">Aktif belajar dan terbuka untuk kolaborasi pembelajaran</p>
+            <p class="typing-fallback">Saya sedang mempelajari <strong data-typing-text data-typing-words="Web Development|Mobile Development|Data Science|Artificial Intelligence">Web Development</strong></p>
+            <div class="hero-actions"><a class="button button--primary" href="projects.html">Lihat Projects</a><a class="button button--secondary" href="about.html">Tentang Saya</a><a class="button button--ghost" href="contact.html">Hubungi Saya</a></div>
+            <dl class="profile-facts"><div><dt>Program studi</dt><dd>S1 Informatika</dd></div><div><dt>Universitas</dt><dd>Universitas Siber Asia</dd></div><div><dt>Domisili</dt><dd>Bogor, Indonesia</dd></div><div><dt>Status akademik</dt><dd>Aktif sejak 2025</dd></div></dl>
+          </div>
+          <div class="home-hero__visual">
+            <!-- TODO_ASSET: Ganti dengan assets/images/profile/raden-dimas-profile.webp setelah foto asli tersedia. -->
+            <figure class="profile-frame"><div class="profile-frame__grid" aria-hidden="true"></div><div class="profile-frame__monogram" aria-hidden="true">RD</div><figcaption>Foto profil akan ditambahkan</figcaption></figure>
+            <article class="terminal-profile terminal-card" aria-labelledby="terminal-title"><header class="terminal-profile__header"><span aria-hidden="true">● ● ●</span><h2 id="terminal-title">Profile snapshot</h2></header><pre><code>raden@portfolio:~$ whoami
 
-      <div class="container page-content home-placeholder">
-        <!-- TODO: Konten lengkap akan ditambahkan pada milestone yang sesuai. -->
-        <div class="empty-state stack">
-          <p>Halaman Home akan dikembangkan pada milestone berikutnya.</p>
+Name       : Raden Dimas Taufik Rahmat
+Education  : S1 Informatika — UNSIA
+Focus      : Web, Mobile, Data, AI
+Location   : Bogor, Indonesia
+Status     : Learning and Building</code></pre></article>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section section--subtle" aria-labelledby="highlights-title"><div class="container stack--lg"><header class="section-heading"><p class="eyebrow">Profile highlights</p><h2 id="highlights-title">Fondasi dan arah pembelajaran</h2></header><div class="highlight-grid">
+        <article class="card"><p class="card-kicker">Pendidikan</p><h3>S1 Informatika</h3><p>Mahasiswa aktif Universitas Siber Asia.</p></article>
+        <article class="card"><p class="card-kicker">Fokus Web</p><h3>Web Development</h3><p>Mempelajari HTML5, CSS3, dan JavaScript.</p></article>
+        <article class="card"><p class="card-kicker">Fokus Mobile</p><h3>Mobile Development</h3><p>Mempelajari Kotlin dan pengembangan aplikasi mobile.</p></article>
+        <article class="card"><p class="card-kicker">Data dan AI</p><h3>Data &amp; Artificial Intelligence</h3><p>Sedang memperdalam pengolahan data, data science, dan artificial intelligence.</p></article>
+      </div></div></section>
+
+      <section class="section" aria-labelledby="about-preview-title"><div class="container about-preview"><header class="section-heading"><p class="eyebrow">Tentang singkat</p><h2 id="about-preview-title">Belajar teknologi melalui proses dan karya</h2></header><div class="about-preview__content stack"><p>Saya adalah mahasiswa S1 Informatika di Universitas Siber Asia dengan ketertarikan pada perkembangan teknologi. Fokus pembelajaran saya mencakup pengembangan web, aplikasi mobile, pengolahan data, dan artificial intelligence.</p><p>Saya membangun pengalaman belajar melalui proyek akademik dan program pengembangan teknologi. Dalam setiap prosesnya, saya menekankan kemauan belajar, pemecahan masalah, dan pengembangan karya yang semakin terstruktur.</p><p><a class="button button--secondary" href="about.html">Pelajari Profil Saya</a></p></div></div></section>
+
+      <section class="section section--subtle" aria-labelledby="focus-title"><div class="container stack--lg"><header class="section-heading"><p class="eyebrow">Areas of focus</p><h2 id="focus-title">Bidang yang sedang dipelajari</h2><p>Empat bidang yang membentuk arah eksplorasi dan proyek pembelajaran saya.</p></header><div class="focus-grid">
+        <article class="focus-card card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H4zM8 21h8M9 17v4M15 17v4M7 9l2 2-2 2M11 13h5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><h3>Web Development</h3><p>Membangun antarmuka web yang terstruktur, responsif, mudah digunakan, dan menggunakan semantic HTML.</p><ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li></ul></article>
+        <article class="focus-card card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm3 15h2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><h3>Mobile Development</h3><p>Mempelajari pengembangan aplikasi mobile, khususnya ekosistem Android dan penggunaan Kotlin.</p><ul class="tag-list"><li>Kotlin</li><li>Android</li><li>UI Development</li><li>API Integration</li></ul></article>
+        <article class="focus-card card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><h3>Data &amp; Analytics</h3><p>Mempelajari pengelolaan, pembersihan, analisis, dan penyajian data untuk mendukung pengambilan keputusan.</p><ul class="tag-list"><li>Data Processing</li><li>Data Visualization</li><li>MySQL</li><li>Python</li></ul></article>
+        <article class="focus-card card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M5 12h3m8 0h3M9 18h6M8 12a4 4 0 1 1 8 0c0 2-1 3-2 4h-4c-1-1-2-2-2-4Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><h3>Artificial Intelligence</h3><p>Memperdalam pemahaman mengenai dasar AI, machine learning, generative AI, serta penerapan teknologi secara bertanggung jawab.</p><ul class="tag-list"><li>AI Fundamentals</li><li>Machine Learning</li><li>Generative AI</li><li>AI Ethics</li></ul></article>
+      </div></div></section>
+
+      <section class="section" aria-labelledby="projects-preview-title"><div class="container stack--lg"><header class="section-heading"><p class="eyebrow">Featured projects</p><h2 id="projects-preview-title">Proyek pilihan dan konsep pembelajaran</h2><p>Ringkasan karya yang sedang dikembangkan, dirancang, atau digunakan sebagai latihan akademik.</p></header><div class="project-preview-grid">
+        <article class="project-preview-card card card--interactive"><div class="project-preview-card__visual" aria-hidden="true">01 / WEB</div><p><span class="badge">Sedang dikembangkan</span> Web Development</p><h3>Raden Dimas Digital Portfolio</h3><p>Website portofolio statis multi-page menggunakan semantic HTML5, modern CSS3, vanilla JavaScript, aksesibilitas, dan animasi ringan.</p><ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul><a href="projects.html">Pelajari project</a></article>
+        <article class="project-preview-card card card--interactive"><div class="project-preview-card__visual" aria-hidden="true">02 / APP</div><p><span class="badge">Konsep / Dalam perancangan</span> Mobile Application</p><h3>TOEFL Prep+</h3><p>Konsep aplikasi pembelajaran TOEFL dengan onboarding, latihan, progress pembelajaran, pengaturan, dan informasi aplikasi.</p><ul class="tag-list"><li>Kotlin Multiplatform</li><li>Jetpack Compose</li></ul><a href="projects.html">Pelajari project</a></article>
+        <article class="project-preview-card card card--interactive"><div class="project-preview-card__visual" aria-hidden="true">03 / DB</div><p><span class="badge">Proyek akademik</span> Database</p><h3>Sistem Basis Data Perpustakaan</h3><p>Perancangan basis data untuk mengelola data buku, anggota, peminjaman, pengembalian, dan relasi antartabel.</p><ul class="tag-list"><li>MySQL</li><li>Database Design</li></ul><a href="projects.html">Pelajari project</a></article>
+        <article class="project-preview-card card card--interactive"><div class="project-preview-card__visual" aria-hidden="true">04 / DATA</div><p><span class="badge">Proyek pembelajaran</span> Data Science</p><h3>Data Clustering Analysis</h3><p>Latihan pengolahan data, eksplorasi, visualisasi, clustering, dan interpretasi hasil pengelompokan.</p><ul class="tag-list"><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>Scikit-learn</li></ul><a href="projects.html">Pelajari project</a></article>
+      </div><p><a class="button button--secondary" href="projects.html">Lihat Semua Projects</a></p></div></section>
+
+      <section class="section section--subtle" aria-labelledby="journey-title"><div class="container journey-layout"><header class="section-heading"><p class="eyebrow">Learning journey</p><h2 id="journey-title">Perjalanan belajar</h2><p>Perkembangan pembelajaran formal dan program pengembangan teknologi.</p><a href="about.html">Lihat perjalanan lengkap</a></header><ol class="journey-preview">
+        <li><time datetime="2024">2024</time><article><h3>Bangkit Academy — Mobile Development Path</h3><p>Mengikuti program pembelajaran Mobile Development.</p></article></li>
+        <li><time datetime="2025">2025–sekarang</time><article><h3>Universitas Siber Asia — S1 Informatika</h3><p>Mahasiswa aktif.</p></article></li>
+        <li><time datetime="2026">2026</time><article><h3>Memperluas bidang pembelajaran</h3><p>Memperluas pembelajaran web, data, dan artificial intelligence melalui proyek akademik dan program pelatihan.</p></article></li>
+      </ol></div></section>
+
+      <section class="section" aria-labelledby="technology-title"><div class="container stack--lg"><header class="section-heading"><p class="eyebrow">Technology &amp; tools</p><h2 id="technology-title">Teknologi yang sedang dipelajari</h2></header><div class="technology-groups">
+        <article class="card"><h3>Web</h3><ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul></article><article class="card"><h3>Mobile</h3><ul class="tag-list"><li>Kotlin</li><li>Android</li><li>Jetpack Compose</li></ul></article><article class="card"><h3>Data</h3><ul class="tag-list"><li>Python</li><li>Pandas</li><li>MySQL</li></ul></article><article class="card"><h3>Tools</h3><ul class="tag-list"><li>Git</li><li>GitHub</li><li>Visual Studio Code</li><li>Figma</li></ul></article>
+      </div></div></section>
+
+      <section class="section home-cta" aria-labelledby="home-cta-title"><div class="container home-cta__inner"><div class="stack--sm"><p class="eyebrow">Kolaborasi pembelajaran</p><h2 id="home-cta-title">Mari Bertumbuh dan Membangun Bersama</h2><p>Terbuka untuk berdiskusi, berbagi pengetahuan, dan berkolaborasi dalam proyek pembelajaran di bidang teknologi.</p></div><div class="hero-actions"><a class="button button--primary" href="contact.html">Hubungi Saya</a><a class="button button--secondary" href="projects.html">Lihat Projects</a></div></div></section>
     </main>
 
     <footer class="site-footer">
