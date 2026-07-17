@@ -76,3 +76,6 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 - [x] Siswa Tersertifikasi Gemini — Universitas: diterbitkan 21 November 2025, berlaku hingga 21 November 2028, URL verifikasi Accredible terkonfirmasi.
 - [x] Kedua credential Google dipertahankan sebagai item terpisah.
 - [x] Data sensitif, JSON mentah, identity hash, salt, proof, verification method, nomor peserta, dan riwayat pendidikan lama tidak dipublikasikan.
+- [x] Pengguna mengizinkan sertifikat Dicoding Bootcamp Batch 5 dan AKIRA 5 ditampilkan secara utuh, termasuk nomor yang tercetak pada gambar.
+- [x] Nomor pada kedua gambar tersebut tidak disalin menjadi metadata atau teks HTML baru.
+- [x] Gallery memiliki enam gambar credential publik.
