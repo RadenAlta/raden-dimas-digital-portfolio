@@ -192,6 +192,18 @@
 .dialog-open{overflow:hidden}.section-cta{margin-top:3rem}.privacy-note{margin-block:3rem}
 [hidden]{display:none!important}
 
+.contact-page,.privacy-content,.success-content{display:grid;gap:var(--space-10)}
+.contact-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-5)}
+.contact-method-card,.success-step{display:grid;align-content:start;gap:var(--space-3);padding:var(--space-5);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface)}
+.contact-method-card__icon{display:grid;width:var(--control-height);height:var(--control-height);place-items:center;border-radius:var(--radius-md);background:var(--color-surface-elevated);color:var(--color-primary)}
+.contact-method-card__icon svg{width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.8}.contact-method-card__value{overflow-wrap:anywhere;font-weight:var(--font-weight-semibold)}
+.contact-layout{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:var(--space-8);align-items:start}.contact-form{display:grid;gap:var(--space-5);padding:var(--space-6);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface)}
+.form-group{display:grid;gap:var(--space-2)}.form-required,.form-help,.form-counter{color:var(--color-text-muted);font-size:var(--font-size-sm)}.form-error{min-height:1.5em;color:var(--color-danger);font-weight:var(--font-weight-semibold)}[aria-invalid="true"]{border-color:var(--color-danger);box-shadow:0 0 0 var(--border-width) var(--color-danger)}
+.form-consent{grid-template-columns:auto 1fr}.form-consent input{width:var(--control-height);min-height:var(--control-height)}.form-consent .form-help,.form-consent .form-error{grid-column:2}.form-actions,.success-actions{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+.form-error-summary,.prepared-email{display:grid;gap:var(--space-3);margin-bottom:var(--space-5);padding:var(--space-5);border:var(--border-width-strong) solid var(--color-danger);border-radius:var(--radius-lg);background:var(--color-surface)}.prepared-email{border-color:var(--color-success)}
+.contact-faq details{padding:var(--space-4);border:var(--border-width) solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface)}.contact-faq summary{cursor:pointer;font-weight:var(--font-weight-semibold)}
+.privacy-content{max-width:var(--container-narrow)}.privacy-section{display:grid;gap:var(--space-4)}.privacy-toc ul{columns:2}.success-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-5);padding:0;list-style-position:inside}.success-content{max-width:var(--container-narrow)}
+
 /* Halaman multimedia: tetap informatif saat aset belum tersedia. */
 .media-page,
 .featured-video,
