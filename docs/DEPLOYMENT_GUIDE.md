@@ -1,8 +1,19 @@
 # Deployment Guide
 
-## Kondisi proyek
+## Status deployment
 
-Proyek adalah website statis dengan `index.html` sebagai entry point, `404.html` sebagai halaman bantuan, path aset relatif, tanpa build step, dependency install, backend, database, atau environment variable. Pada audit 17 Juli 2026, repository Git tersedia tetapi `git remote -v` tidak menghasilkan remote. Production URL berstatus `TODO_DEPLOYMENT_URL`.
+Status: **DEPLOYED**
+
+- Production URL: https://radenalta.github.io/raden-dimas-digital-portfolio/
+- Repository: https://github.com/RadenAlta/raden-dimas-digital-portfolio
+- Hosting: GitHub Pages
+- Branch: `main`
+- Source folder: root
+- Build step: tidak ada
+
+Catatan verifikasi: konfigurasi/API deployment telah dikonfirmasi, tetapi uji browser saat finalisasi ini membuka halaman GitHub Pages “Site not found”. Periksa kembali Pages Settings dan deployment terbaru sebelum menyatakan endpoint production lolos regression test.
+
+Proyek adalah website statis multi-page dengan `index.html` sebagai entry point dan `404.html` yang dikenali GitHub Pages sebagai custom 404. Seluruh path aset bersifat relatif; tidak ada dependency install, backend, database, atau environment variable.
 
 ## Prasyarat dan struktur
 
@@ -19,19 +30,16 @@ Proyek adalah website statis dengan `index.html` sebagai entry point, `404.html`
 4. Periksa Contact mailto dan tautan eksternal secara manual.
 5. Ambil bukti sesuai `SCREENSHOT_PLAN.md`.
 
-## Opsi hosting
+## Alur maintenance
 
-GitHub Pages dapat menyajikan file root tanpa build. Pengguna harus lebih dahulu membuat/menentukan repository, menambahkan remote yang benar, push sendiri, lalu mengaktifkan Pages dari branch yang dipilih. Hosting statis lain seperti Netlify, Vercel static hosting, atau web server biasa cukup diarahkan ke root proyek tanpa build command. Tidak ada konfigurasi vendor yang diperlukan.
-
-## Menentukan URL produksi
-
-URL produksi hanya boleh dicatat setelah deployment berhasil dan halaman dapat dibuka. Setelah dikonfirmasi:
-
-1. Tambahkan canonical absolut yang tepat pada setiap halaman.
-2. Tambahkan `og:url` sesuai path halaman.
-3. Isi `sitemap.xml` dengan URL absolut untuk Home, About, Projects, Gallery, Credentials, Video, Audio, Contact, dan Privacy; jangan masukkan Success atau 404.
-4. Tambahkan baris `Sitemap: https://domain-valid/sitemap.xml` ke `robots.txt`.
-5. Ganti `TODO_DEPLOYMENT_URL` di dokumentasi dan laporan.
+1. Edit project lokal.
+2. Test lokal.
+3. Commit perubahan yang sudah direview.
+4. Push ke branch `main`.
+5. GitHub Pages menjalankan deployment.
+6. Periksa GitHub Actions sampai deployment berhasil.
+7. Periksa production URL.
+8. Lakukan regression test.
 
 ## Pemeriksaan setelah deployment
 
@@ -45,4 +53,4 @@ URL produksi hanya boleh dicatat setelah deployment berhasil dan halaman dapat d
 
 Sebelum push: review diff, pastikan tidak ada file privat, credential JSON, PDF sumber, `.env`, token, atau screenshot debugging; buat commit yang jelas setelah pengguna menyetujui. Jika deployment bermasalah, kembalikan melalui commit Git yang diketahui baik atau revert commit terkait—jangan memakai reset destruktif pada perubahan yang belum diamankan.
 
-TODO: remote repository, production URL, canonical, `og:url`, sitemap final, robots sitemap directive, deployment, dan verifikasi custom 404.
+Canonical dan `og:url` tersedia pada sepuluh halaman publik; 404 tidak memiliki canonical. Sitemap memuat sembilan halaman SEO dan robots menunjuk ke sitemap produksi. Rendering visual custom 404 dan seluruh interaksi production tetap harus dibuktikan melalui pengujian browser manual.

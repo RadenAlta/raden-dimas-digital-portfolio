@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://radenalta.github.io/raden-dimas-digital-portfolio/sitemap.xml

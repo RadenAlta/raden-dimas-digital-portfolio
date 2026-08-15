@@ -32,7 +32,14 @@ Website tidak memakai analytics, database, cookie sendiri, atau penyimpanan data
 
 ## Deployment
 
-Struktur siap untuk GitHub Pages, Netlify, Vercel static hosting, atau server statis biasa. Belum ada remote Git maupun deployment yang dikonfirmasi. Production URL: `TODO_DEPLOYMENT_URL`. Canonical, `og:url`, sitemap final, dan robots sitemap directive harus ditambahkan setelah URL nyata tersedia.
+- **Live Website:** https://radenalta.github.io/raden-dimas-digital-portfolio/
+- **Repository:** https://github.com/RadenAlta/raden-dimas-digital-portfolio
+- **Hosting:** GitHub Pages
+- **Branch:** `main`
+- **Source Folder:** root
+- **Deployment Status:** Active
+
+Website dipublikasikan langsung dari root branch `main` tanpa dependency atau build step. Canonical, `og:url`, sitemap, dan robots menggunakan URL produksi final.
 
 Video Hero berstatus `LICENSE_CONFIRMED_FOR_PUBLIC_USE`. Pemilik project mengonfirmasi bahwa video angka biner diizinkan untuk digunakan secara gratis pada website publik. Video digunakan sebagai background dekoratif Home Hero, tidak memiliki audio, dan tidak memuat data pribadi. Atribusi tidak dicantumkan karena tidak diwajibkan berdasarkan konfirmasi pemilik project. Bukti atau URL sumber dapat ditambahkan kemudian bila tersedia.
 

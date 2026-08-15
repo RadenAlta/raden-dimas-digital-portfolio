@@ -73,7 +73,7 @@ Layout mobile-first. Pada mobile seluruh bagian satu kolom, pada tablet kartu me
 ## Aset yang masih TODO
 
 - Foto profil asli: `assets/images/profile/raden-dimas-profile.webp`.
-- Domain produksi untuk `og:url` (`TODO_DOMAIN`).
+- Social preview image khusus yang terverifikasi.
 - Screenshot proyek asli setelah aset dan izin publikasi tersedia.
 - CV asli tetap memakai placeholder global nonaktif.
 

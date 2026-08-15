@@ -1,31 +1,31 @@
-# Screenshot Plan
+# Screenshot Plan — Production UAS Evidence
 
-Semua screenshot berstatus **PENDING** dan harus diambil dari server lokal/production yang benar, tanpa rekayasa. Gunakan nama berikut.
+Status seluruh screenshot: **PENDING MANUAL CAPTURE**. Ambil bukti nyata dari https://radenalta.github.io/raden-dimas-digital-portfolio/ dan simpan di `docs/screenshots/`. Jangan membuat atau menandai screenshot selesai sebelum file benar-benar diambil.
 
-| File | Halaman / viewport / state | Tujuan laporan UAS |
-|---|---|---|
-| `01-home-desktop-dark.png` | Home, 1440×900, dark | Tampilan utama desktop |
-| `02-home-mobile.png` | Home, 390×844 | Responsivitas Home |
-| `03-about.png` | About, 1440×900 | Profil dan pendidikan |
-| `04-projects-all.png` | Projects, 1440×900, semua | Koleksi proyek |
-| `05-projects-filter.png` | Projects, 768×1024, hasil filter/search | Interaksi pencarian |
-| `06-gallery.png` | Gallery, 1440×900 | Grid galeri |
-| `07-gallery-lightbox.png` | Gallery, lightbox terbuka | Dialog dan gambar |
-| `08-credentials.png` | Credentials, 1440×900 | Sembilan credential |
-| `09-credentials-filter.png` | Credentials, filter aktif | Filter credential |
-| `10-video-fallback.png` | Video, 1440×900 | Fallback tanpa video |
-| `11-audio-fallback.png` | Audio, 1440×900 | Fallback tanpa audio |
-| `12-contact-methods.png` | Contact, 1440×900 | Metode kontak publik |
-| `13-contact-errors.png` | Contact, error validasi | Aksesibilitas error |
-| `14-prepared-email.png` | Contact, draft siap | Alur mailto statis |
-| `15-privacy.png` | Privacy, 1440×900 | Penjelasan privasi |
-| `16-success.png` | Success, 1440×900 | Halaman bantuan email |
-| `17-404.png` | 404, 1440×900 | Recovery page final |
-| `18-light-theme.png` | Home, 1440×900, light | Tema terang |
-| `19-mobile-navigation.png` | Home, 390×844, menu terbuka | Navigasi mobile |
-| `20-git-history.png` | Terminal Git log | Riwayat milestone |
-| `21-source-structure.png` | Explorer/tree proyek | Struktur source |
-| `22-http-200.png` | Network/terminal | Bukti HTTP 200 |
-| `23-responsive-devtools.png` | DevTools responsive | Bukti viewport |
+| No. | Bukti | Kondisi minimum |
+|---:|---|---|
+| 1 | Home desktop dark | 1440×900, tema dark |
+| 2 | Home mobile | 390×844 |
+| 3 | About | Konten utama terlihat |
+| 4 | Projects | Semua proyek |
+| 5 | Projects filter/search | Hasil filter atau pencarian aktif |
+| 6 | Gallery | Grid galeri |
+| 7 | Gallery lightbox | Dialog terbuka |
+| 8 | Credentials | Sembilan credential |
+| 9 | Credentials filter | Filter aktif |
+| 10 | Video fallback | Fallback media terlihat |
+| 11 | Audio fallback | Fallback media terlihat |
+| 12 | Contact | Metode kontak dan form |
+| 13 | Contact validation | Error validasi terlihat |
+| 14 | Contact prepared email | State draft email siap; jangan kirim email |
+| 15 | Privacy | Penjelasan privasi |
+| 16 | Success | Halaman bantuan email |
+| 17 | 404 | URL production yang tidak dikenal |
+| 18 | Light theme | Home 1440×900, tema light |
+| 19 | Mobile navigation | Home 390×844, menu terbuka |
+| 20 | GitHub Actions deployment success | Run deployment sukses |
+| 21 | GitHub repository | Repository dan branch terlihat |
+| 22 | GitHub Pages Settings | Source `main` dan root terlihat |
+| 23 | Production URL di browser | Address bar dan halaman production |
 
-Langkah manual: jalankan server, atur viewport persis, pastikan Console bersih, pilih state yang diminta, tangkap hanya area relevan tanpa data privat, simpan ke `docs/screenshots/`, lalu catat browser, tanggal, dan commit. Jangan menandai selesai sebelum file benar-benar ada.
+Catat browser, tanggal, viewport, tema, dan commit deployment. Pastikan tidak ada data privat, Console error, atau screenshot hasil rekayasa.
