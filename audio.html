@@ -51,14 +51,28 @@
 
         <div class="header-actions cluster">
           <button class="theme-toggle button button--ghost" type="button"
-                  aria-pressed="false" aria-label="Gunakan tema terang" data-theme-toggle>
-            <span class="theme-toggle__icon" aria-hidden="true"></span>
-            <span data-theme-label>Tema terang</span>
+                  aria-label="Aktifkan tema terang" title="Aktifkan tema terang"
+                  data-theme-toggle>
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"
+                 aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"
+                 aria-hidden="true" focusable="false">
+              <path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"></path>
+            </svg>
           </button>
-          <!-- TODO_ASSET: Ubah menjadi link download setelah CV asli tersedia. -->
-          <button class="button button--secondary cv-placeholder" type="button" disabled>
-            Download CV — segera
-          </button>
+          <a class="button button--secondary header-cv-download"
+             href="assets/documents/Raden-Dimas-Taufik-Rahmat-CV.pdf"
+             download="Raden-Dimas-Taufik-Rahmat-CV.pdf"
+             aria-label="Download CV Raden Dimas Taufik Rahmat"
+             title="Download CV Raden Dimas Taufik Rahmat (PDF)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path>
+            </svg>
+            <span class="header-cv-download__label">Download CV</span>
+          </a>
         </div>
       </div>
       <button class="nav-overlay" type="button" aria-label="Tutup menu utama"

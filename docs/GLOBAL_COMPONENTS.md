@@ -6,7 +6,7 @@ Komponen global menyediakan header, navigasi, theme toggle, footer, dan back-to-
 
 ## Header structure
 
-Header memakai `.site-header` dan container `.site-header__inner`. Isinya adalah brand RD, tombol menu, navigasi utama, theme toggle, dan placeholder CV. Header bersifat sticky dan memperoleh class `.is-scrolled` setelah halaman digulir.
+Header memakai `.site-header` dan container `.site-header__inner`. Isinya adalah brand RD, tombol menu, navigasi utama, icon-only theme toggle, dan link download CV. Header bersifat sticky dan memperoleh class `.is-scrolled` setelah halaman digulir.
 
 ## Navigation structure
 
@@ -35,6 +35,8 @@ Urutan tema:
 
 Tema diterapkan pada `document.documentElement.dataset.theme` dengan nilai `dark` atau `light`.
 
+Theme toggle menampilkan ikon berdasarkan tindakan berikutnya: tema aktif dark menampilkan matahari untuk mengaktifkan tema terang, sedangkan tema aktif light menampilkan bulan untuk mengaktifkan tema gelap. `aria-label` dan `title` selalu mengikuti tindakan tersebut.
+
 ## localStorage key
 
 `raden-portfolio-theme`
@@ -51,9 +53,9 @@ Footer terdiri dari:
 - Placeholder teks sosial tanpa URL palsu.
 - Copyright dengan `<time data-current-year>` dan fallback 2026.
 
-## CV placeholder behavior
+## CV download behavior
 
-CV belum tersedia. Kontrol menggunakan button `disabled`, tidak memiliki URL, tidak dapat difokuskan atau diaktifkan, dan tidak menghasilkan HTTP 404.
+CV tersedia sebagai PDF lokal di `assets/documents/Raden-Dimas-Taufik-Rahmat-CV.pdf`. Seluruh header memakai link native dengan atribut `download`, nama file stabil, ikon SVG lokal, visible label “Download CV”, dan accessible name “Download CV Raden Dimas Taufik Rahmat”. Link tidak membuka tab baru.
 
 ## Back-to-top behavior
 
@@ -75,7 +77,7 @@ Reduced motion menghilangkan durasi transisi panel menu, header, ikon, button, d
 
 - Header: `.site-header`, `.is-scrolled`, `.site-header__inner`.
 - Navigation: `.site-nav`, `.site-nav__list`, `.site-nav__link`, `.is-open`.
-- Controls: `.menu-toggle`, `.theme-toggle`, `.cv-placeholder`.
+- Controls: `.menu-toggle`, `.theme-toggle`, `.header-cv-download`.
 - Footer: `.site-footer`, `.site-footer__grid`, `.site-footer__links`.
 - Back-to-top: `.back-to-top`, `.is-visible`.
 - State body: `.menu-open`.
@@ -103,10 +105,10 @@ Reduced motion menghilangkan durasi transisi panel menu, header, ikon, button, d
 ## Cara menguji dark/light theme
 
 1. Buka salah satu halaman melalui server lokal.
-2. Aktifkan tombol Tema terang.
-3. Pastikan label berubah menjadi Tema gelap dan `data-theme="light"` diterapkan.
+2. Pada tema dark, pastikan ikon matahari dan label aksesibel “Aktifkan tema terang” tersedia.
+3. Aktifkan tombol dan pastikan ikon berubah menjadi bulan, label aksesibel menjadi “Aktifkan tema gelap”, serta `data-theme="light"` diterapkan.
 4. Reload dan pindah halaman untuk memeriksa persistence.
-5. Aktifkan kembali tombol Tema gelap.
+5. Aktifkan kembali tombol untuk kembali ke dark.
 
 ## Cara menguji mobile menu
 
@@ -127,4 +129,3 @@ Hero Home, typing animation, canvas, intro terminal, scroll reveal, filter proye
 - Pertahankan shell global dan event initialization yang ada.
 - Integrasikan CTA tanpa membuat URL atau statistik palsu.
 - Uji kembali header/footer setelah konten Home membuat halaman lebih panjang.
-

@@ -5,7 +5,7 @@ Website portofolio personal dan proyek UAS Pemrograman Web I milik Raden Dimas T
 ## Teknologi dan fitur
 
 - Semantic HTML5, modern CSS3, dan vanilla JavaScript.
-- Dark/light theme, navigasi responsif, skip link, focus-visible, reduced motion, dan progressive enhancement.
+- Icon-only dark/light theme toggle, navigasi responsif, skip link, focus-visible, reduced motion, dan progressive enhancement.
 - Search/filter Projects, filter Credentials dan Gallery, Gallery lightbox, typing terbatas, form Contact mailto, serta halaman Privacy, Success, dan custom 404.
 - Aset sertifikat lokal; tanpa CDN, analytics, tracking, atau hotlink gambar.
 - Video angka biner lokal menjadi background dekoratif Home Hero dengan poster, reduced-motion fallback, pemeriksaan Save Data, dan pause saat tab tersembunyi.
@@ -26,7 +26,7 @@ Gunakan Live Server dari root proyek, atau jalankan `python -m http.server 5500`
 
 ## Batasan aktual
 
-Form Contact tidak memiliki backend: data diproses lokal dan pengguna memilih membuka aplikasi email. Media khusus untuk halaman Video dan Audio belum tersedia, sehingga kedua halaman menampilkan fallback faktual tanpa media palsu atau autoplay. CV publik dan social preview belum tersedia.
+Form Contact tidak memiliki backend: data diproses lokal dan pengguna memilih membuka aplikasi email. Media khusus untuk halaman Video dan Audio belum tersedia, sehingga kedua halaman menampilkan fallback faktual tanpa media palsu atau autoplay. CV publik tersedia sebagai PDF lokal; social preview belum tersedia.
 
 ## Privasi
 

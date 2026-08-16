@@ -37,16 +37,9 @@
       return;
     }
 
-    const nextThemeIsLight = theme === "dark";
-    const label = nextThemeIsLight ? "Tema terang" : "Tema gelap";
-
-    button.setAttribute("aria-label", nextThemeIsLight ? "Gunakan tema terang" : "Gunakan tema gelap");
-    button.setAttribute("aria-pressed", String(theme === "light"));
-
-    const labelElement = button.querySelector("[data-theme-label]");
-    if (labelElement) {
-      labelElement.textContent = label;
-    }
+    const actionLabel = theme === "dark" ? "Aktifkan tema terang" : "Aktifkan tema gelap";
+    button.setAttribute("aria-label", actionLabel);
+    button.setAttribute("title", actionLabel);
   }
 
   function applyTheme(theme) {
@@ -88,4 +81,3 @@
     initThemeToggle();
   }
 })();
-

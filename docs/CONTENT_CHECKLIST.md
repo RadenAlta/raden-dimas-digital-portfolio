@@ -3,6 +3,7 @@
 ## Sudah dikonfirmasi
 
 - [x] Foto profil formal pengguna tersedia dan diizinkan untuk digunakan pada Home dan About.
+- [x] CV final tersedia dan diizinkan sebagai download PDF publik melalui `assets/documents/Raden-Dimas-Taufik-Rahmat-CV.pdf`.
 - [x] Analisis Bisnis Supermarket Indonesia beserta dashboard Looker Studio tersedia sebagai project publik.
 - [x] School Administration Knowledge Assistant tersedia sebagai project AI Agent berbasis knowledge base simulasi.
 - [x] Kelotra — Asset & Inventory Management System tersedia sebagai full-stack MVP lokal berbasis Kotlin Multiplatform; repository publik: https://github.com/RadenAlta/kelotra.
@@ -50,7 +51,6 @@
 - [ ] `TODO`: isi galeri dan caption.
 - [ ] `TODO`: isi, deskripsi, caption, dan transcript video.
 - [ ] `TODO`: naskah dan transcript audio.
-- [ ] `TODO`: CV dan persetujuan menampilkannya.
 - [ ] `TODO`: karya pilihan di Home dan urutannya.
 
 ## Tidak boleh dibuat-buat
@@ -85,7 +85,7 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 5. Pengalaman atau timeline yang memang ingin dipublikasikan.
 6. Email publik, kanal kontak, dan URL sosial yang diizinkan.
 7. Pilihan karya, galeri, video, audio, dan caption/transcript.
-8. CV final dan apakah boleh diunduh publik.
+8. Pembaruan CV berikutnya jika isi dokumen berubah.
 9. Preferensi call-to-action utama dan urutan halaman di navigasi.
 10. Persetujuan copy final sebelum deployment.
 # Konfirmasi Milestone 8 — Credentials dan Gallery

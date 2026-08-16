@@ -149,10 +149,6 @@
     justify-content: flex-end;
   }
 
-  .theme-toggle [data-theme-label] {
-    display: none;
-  }
-
   .split-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -187,8 +183,16 @@
     --page-gutter: 2rem;
   }
 
-  .theme-toggle [data-theme-label] {
-    display: inline;
+}
+
+@media (max-width: 24rem) {
+  .header-cv-download__label {
+    font-size: 0;
+  }
+
+  .header-cv-download__label::after {
+    content: "CV";
+    font-size: var(--font-size-sm);
   }
 }
 
