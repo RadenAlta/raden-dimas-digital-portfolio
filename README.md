@@ -18,7 +18,7 @@ Website portofolio personal dan proyek UAS Pemrograman Web I milik Raden Dimas T
 
 ## Struktur
 
-HTML dan metadata berada di root. `assets/css/` menyimpan stylesheet, `assets/js/` menyimpan script, `assets/images/` menyimpan gambar lokal, sedangkan folder audio/video saat ini hanya mempertahankan placeholder. `docs/` berisi brief, keputusan halaman, QA, deployment guide, screenshot plan, dan laporan UAS.
+HTML dan metadata berada di root. `assets/css/` menyimpan stylesheet, `assets/js/` menyimpan script, sedangkan `assets/images/`, `assets/audio/`, dan `assets/videos/` menyimpan media lokal. `docs/` berisi brief, keputusan halaman, QA, deployment guide, screenshot plan, dan laporan UAS.
 
 ## Menjalankan
 
@@ -26,7 +26,7 @@ Gunakan Live Server dari root proyek, atau jalankan `python -m http.server 5500`
 
 ## Batasan aktual
 
-Form Contact tidak memiliki backend: data diproses lokal dan pengguna memilih membuka aplikasi email. Media khusus untuk halaman Video dan Audio belum tersedia, sehingga kedua halaman menampilkan fallback faktual tanpa media palsu atau autoplay. CV publik tersedia sebagai PDF lokal; social preview belum tersedia.
+Form Contact tidak memiliki backend: data diproses lokal dan pengguna memilih membuka aplikasi email. Halaman Video dan Audio memakai media lokal melalui player HTML5 native dengan autoplay dinonaktifkan dan `preload="metadata"`. CV publik tersedia sebagai PDF lokal; social preview belum tersedia.
 
 ## Privasi
 
