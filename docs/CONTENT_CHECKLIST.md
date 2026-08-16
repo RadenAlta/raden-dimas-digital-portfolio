@@ -34,11 +34,10 @@
 - [x] Pengguna mengizinkan akun GitHub tersebut ditampilkan secara publik.
 - [x] Footer menampilkan GitHub sebagai ikon; username RadenAlta tidak ditampilkan sebagai teks visual.
 - [x] Persiapan Contact: kartu GitHub menampilkan label “GitHub”, nilai “RadenAlta”, action “Lihat GitHub”, dan URL https://github.com/RadenAlta.
+- [x] Video referensi Android Development & Agentic AI tersedia sebagai media lokal lengkap, memakai player HTML5 native, dan dikreditkan ke Android Developers — YouTube.
+- [x] Audio Relaxing Medieval Fantasy — Deep Focus tersedia sebagai media lokal lengkap, memakai player HTML5 native, dan dikreditkan melalui sumber YouTube.
 
 ## Belum dikonfirmasi
-
-- [ ] `TODO_MEDIA`: screen recording Milestone 9 disebutkan, tetapi file belum tersedia untuk pemeriksaan metadata, isi, audio, dan keamanan publikasi.
-- [ ] `TODO_MEDIA`: file audio khusus, bahasa, durasi, dan transkrip belum tersedia.
 
 - [ ] `TODO`: bio panjang dan bio singkat.
 - [ ] `TODO`: daftar skill dan level kualitatifnya.

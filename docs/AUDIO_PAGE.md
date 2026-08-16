@@ -1,28 +1,26 @@
-# Audio Page — Milestone 9
+# Audio Page — Multimedia Completion
 
 ## Tujuan dan struktur
 
-Halaman Audio menyediakan hero, breadcrumb, notice, featured-audio fallback, metadata, informasi transkrip, koleksi tiga kartu, CTA, dan footer global.
+Halaman Audio menyediakan hero, breadcrumb, notice, media card, metadata sumber, CTA, dan footer global.
 
 ## Media dan fallback
 
-Folder `assets/audio/` hanya berisi `.gitkeep`; tidak ada rekaman audio khusus. Audio screen recording juga tidak dapat diperiksa karena file video tidak ditemukan. Audio tidak diekstrak dan tidak ada `<audio>`, source, durasi, transcript, atau visualizer palsu.
+Media lengkap tersedia di `assets/audio/focus-study-medieval-fantasy.mp3`. Halaman memakai elemen `<audio>` native dengan `controls` dan `preload="metadata"`; autoplay dinonaktifkan. Media tidak dipotong, dinormalisasi, dikonversi, atau diduplikasi. Sumber dikreditkan melalui URL `https://www.youtube.com/watch?v=oCA8DkQHC40`.
 
 ## Progressive enhancement
 
-`assets/js/audio-player.js` bersifat null-safe dan tidak menampilkan kontrol custom tanpa elemen audio nyata. Script menyediakan `formatTime()`, pembaruan play/mute/waktu/progress, seek, volume, playback rate, error handling, serta `initAudioPlayer()`. Native controls tetap menjadi jalur utama jika audio ditambahkan kemudian.
+Player native menjadi kontrol utama dan tidak memerlukan library atau player JavaScript khusus. Dekorasi not dan bar pada card bersifat statis serta tidak mengklaim sinkronisasi dengan audio.
 
 ## Accessibility, reduced motion, dan no-JavaScript
 
-Fallback menggunakan heading dan teks faktual. Kontrol masa depan memakai button/input native dan label yang berubah sesuai status. Tanpa JavaScript, fallback tetap terbaca; jika audio nyata ditambahkan, native player harus tetap tersedia. Tidak ada equalizer atau animasi karena belum ada audio.
+Kontrol native tetap tersedia tanpa JavaScript dan dapat digunakan melalui keyboard. Karena audio bersifat instrumental, transkrip tidak diperlukan. Dekorasi SVG disembunyikan dari teknologi bantu.
 
 ## Responsive dan pengujian
 
-Metadata serta koleksi responsif dari tiga ke dua lalu satu kolom. Uji 390×844, 768×1024, dan 1440×900, kedua tema, keyboard, focus-visible, menu mobile, reduced motion, Console, Network, dan overflow.
+Media card dan player menyesuaikan lebar viewport. Pengujian dilakukan pada 390×844, 768×1024, dan 1440×900 serta dark/light theme.
 
-## TODO
+## Catatan performa
 
-- Sediakan rekaman audio asli yang aman.
-- Periksa format, durasi, bahasa, isi, dan privasi.
-- Tambahkan transcript asli bersama rekaman final.
-- Uji native dan custom controls setelah media tersedia.
+- Audio hanya memakai `preload="metadata"`; tidak ada preload global atau Service Worker caching.
+- Ukuran audio besar perlu diperhatikan sebelum Git hosting. Git LFS tidak dikonfigurasi otomatis.

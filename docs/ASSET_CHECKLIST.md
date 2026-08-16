@@ -10,9 +10,9 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 | Gambar galeri | `assets/images/gallery/` | `gallery-[slug].webp` | WebP/JPEG | min. 1600px sisi panjang; rasio asli dicatat | TODO per item | Gallery |
 | Gambar sertifikat | `assets/images/certificates/` | `certificate-[slug].webp` | WebP/JPEG; PDF asli hanya bila diizinkan | 1600×1131, kira-kira A4 landscape | TODO per sertifikat | Credentials |
 | Poster video | `assets/images/backgrounds/` | `video-poster.webp` | WebP/JPEG | 1280×720, 16:9 | TODO | Video |
-| Video demo | `assets/videos/` | `portfolio-introduction.mp4` | MP4 H.264; WebM opsional | 1920×1080 atau 1280×720, 16:9 | TODO | Video |
+| Video referensi teknologi | `assets/videos/` | `android-development-agentic-ai.mp4` | MP4 | Rasio asli; stage player 16:9 | Tersedia, lengkap, dan dikreditkan | Video |
 | Caption video | `assets/videos/` | `portfolio-introduction-id.vtt` | WebVTT | Sinkron dengan video | TODO | Video |
-| Audio perkenalan | `assets/audio/` | `portfolio-introduction.mp3` | MP3; OGG opsional | 128–192 kbps, durasi TODO | TODO | Audio |
+| Audio ambience fokus | `assets/audio/` | `focus-study-medieval-fantasy.mp3` | MP3 | File lengkap; `preload="metadata"` | Tersedia, lengkap, dan dikreditkan | Audio |
 | Cover audio | `assets/images/backgrounds/` | `audio-cover.webp` | WebP/JPEG | 1200×1200, 1:1 | TODO | Audio |
 | CV | `assets/documents/` | `cv-raden-dimas.pdf` | PDF accessible | A4, ukuran file ideal < 2 MB | TODO | About, Contact |
 | Favicon | `assets/images/icons/` | `favicon.svg`, `favicon-32.png` | SVG dan PNG | SVG + 32×32 | TODO | Semua halaman |
@@ -27,7 +27,7 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 - Nama, tanggal, credential ID, dan informasi sensitif diperiksa sebelum publikasi.
 - Dimensi eksplisit dicantumkan saat implementasi untuk mencegah layout shift.
 - Gambar dikompresi dengan kualitas baca yang memadai; versi asli disimpan di luar website bila terlalu besar.
-- Video dan audio tidak autoplay; transcript teks wajib tersedia.
+- Video dan audio tidak autoplay; video tanpa transkrip sumber memakai ringkasan yang tidak dilabeli sebagai transkrip, sedangkan audio instrumental tidak memerlukan transkrip.
 - Alt text/caption menjelaskan fungsi atau konteks, bukan mengulang nama file.
 
 ## TODO aset prioritas

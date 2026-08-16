@@ -1,24 +1,22 @@
-# Video Page — Milestone 9
+# Video Page — Multimedia Completion
 
 ## Tujuan dan struktur
 
-Halaman Video menyediakan hero, breadcrumb, notice, featured-media fallback, metadata, topik yang direncanakan, informasi caption/transkrip, koleksi tiga kartu, CTA, dan footer global.
+Halaman Video menyediakan hero, breadcrumb, notice, media stage, metadata sumber, ringkasan konten, CTA, dan footer global.
 
 ## Inspeksi media
 
-File `Screen Recording 2026-07-17 080317.mp4` disebut dalam instruksi, tetapi tidak ditemukan di workspace, attachments, atau Google Drive lokal ketika milestone dikerjakan. Resolusi, durasi, codec, rasio, audio track, isi visual, dan keamanan publikasi belum dapat diperiksa. Karena itu tidak ada `<video>`, source, poster, caption, transkrip, atau metadata teknis yang dibuat.
+Media lokal tersedia di `assets/videos/android-development-agentic-ai.mp4`. Halaman memakai elemen `<video>` native dengan `controls`, `preload="metadata"`, dan `playsinline`; autoplay dinonaktifkan. Media tidak dipotong, tidak diubah, dan tidak diduplikasi. Video dikreditkan kepada Android Developers dengan tautan sumber asli `https://www.youtube.com/watch?v=z7mHJfh7po0`.
 
 ## Perilaku dan aksesibilitas
 
-Fallback memakai heading dan teks `TODO_ASSET`, bukan tombol play palsu. Jika media tersedia, implementasi harus memakai kontrol native, `preload="metadata"`, `playsinline`, tanpa autoplay atau loop. Caption dan transkrip hanya dibuat setelah audio diperiksa. Semua informasi saat ini tersedia tanpa JavaScript dan reduced motion tidak menghilangkan konten.
+Kontrol native dapat digunakan melalui keyboard dan tidak bergantung pada JavaScript. Karena transkrip sumber tidak disediakan, halaman menampilkan ringkasan singkat yang secara eksplisit berlabel “Ringkasan video”, bukan transkrip atau kutipan.
 
 ## Responsive dan pengujian
 
-Metadata memakai grid responsif; koleksi tiga kolom pada desktop, dua pada tablet, dan satu pada mobile. Uji 390×844, 768×1024, dan 1440×900, kedua tema, keyboard, menu mobile, zoom, Console, Network, dan overflow setelah file video ditambahkan.
+Player mempertahankan stage 16:9, memenuhi lebar container, dan memakai `object-fit: contain`. Pengujian dilakukan pada 390×844, 768×1024, dan 1440×900 serta dark/light theme.
 
-## TODO
+## Catatan
 
-- Unggah ulang screen recording ke lokasi yang dapat diakses.
-- Periksa metadata, beberapa frame representatif, audio, dan informasi sensitif.
-- Tambahkan video lokal hanya jika aman; buat caption/transkrip hanya bila faktual.
-- Milestone berikutnya tidak dikembangkan dari halaman ini.
+- Tidak ada autoplay, iframe, CDN, custom player, atau preload global.
+- Poster tidak dibuat karena tidak diperlukan untuk player responsif.
