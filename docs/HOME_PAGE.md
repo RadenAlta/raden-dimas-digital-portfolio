@@ -24,9 +24,9 @@ Nama, program studi, Universitas Siber Asia, status mahasiswa aktif sejak 2025, 
 
 Hero memakai dua kolom pada desktop dan satu kolom pada mobile. Kolom utama berisi satu-satunya `h1`, deskripsi, tagline, status belajar, CTA, serta description list. Kolom visual berisi placeholder profil dan terminal card.
 
-## Profile placeholder
+## Foto profil
 
-Placeholder memakai monogram RD dan grid CSS, bukan foto atau gambar eksternal. Komentar `TODO_ASSET` mencatat target `assets/images/profile/raden-dimas-profile.webp` agar mudah diganti setelah foto asli tersedia.
+Foto formal asli pengguna tersedia di `assets/images/profile/raden-dimas-profile.jpg` dan digunakan di dalam frame Home. Gambar memakai `object-fit: cover` serta focal point vertikal agar wajah tetap terlihat tanpa stretch.
 
 ## Terminal card
 
@@ -38,7 +38,7 @@ Empat kartu mencakup Web Development, Mobile Development, Data & Analytics, dan 
 
 ## Featured projects
 
-Home menampilkan Digital Portfolio, TOEFL Prep+, Sistem Basis Data Perpustakaan, dan Data Clustering Analysis sesuai status yang ditentukan. Visual kartu berupa placeholder abstrak CSS. Semua detail menuju `projects.html`; tidak ada repository atau demo palsu.
+Home memprioritaskan Kelotra, Analisis Bisnis Supermarket Indonesia, dan School Administration Knowledge Assistant, lalu Digital Portfolio. Semua detail menuju anchor kartu yang sesuai di `projects.html`; tidak ada live demo palsu.
 
 ## Learning journey
 
@@ -72,7 +72,6 @@ Layout mobile-first. Pada mobile seluruh bagian satu kolom, pada tablet kartu me
 
 ## Aset yang masih TODO
 
-- Foto profil asli: `assets/images/profile/raden-dimas-profile.webp`.
 - Social preview image khusus yang terverifikasi.
 - Screenshot proyek asli setelah aset dan izin publikasi tersedia.
 - CV asli tetap memakai placeholder global nonaktif.

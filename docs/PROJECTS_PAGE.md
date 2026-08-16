@@ -6,11 +6,11 @@ Projects menampilkan karya pembelajaran secara faktual, dapat dicari, dan dapat 
 
 ## Project data dan status
 
-Empat kartu yang diizinkan Milestone 7 adalah Raden Dimas Digital Portfolio (Sedang dikembangkan), TOEFL Prep+ (Konsep dan perancangan), Sistem Basis Data Perpustakaan (Proyek akademik), dan Data Clustering Analysis (Proyek pembelajaran). Tidak ada proyek AI kelima.
+Halaman memiliki tujuh kartu: empat project awal, Kelotra, Analisis Bisnis Supermarket Indonesia, dan School Administration Knowledge Assistant. Kelotra adalah full-stack MVP lokal berbasis Kotlin Multiplatform dengan repository publik, target Android/Web/Desktop/iOS, dan belum memiliki production deployment. Project Supermarket memakai Spreadsheet, Google Sheets, Looker Studio, Orange Data Mining, Data Analysis, serta Data Visualization; dashboard publik ditautkan, sedangkan spreadsheet tidak dipublikasikan karena status permission publiknya tidak diverifikasi. Project Langflow memakai knowledge base simulasi dan tidak menggantikan keputusan petugas sekolah.
 
 ## Aturan data faktual
 
-Halaman tidak menampilkan repository, live demo, screenshot, statistik, pengguna, akurasi, dataset, hasil pengujian, atau tanggal selesai yang belum dikonfirmasi. Visual kartu adalah pola CSS dekoratif.
+Halaman tidak menampilkan repository, live demo Langflow, statistik, akurasi, atau tanggal selesai yang belum dikonfirmasi. Screenshot Prompt Template yang telah diperiksa digunakan sebagai thumbnail project Langflow. Flow JSON dan `generated-token.json` tidak dipublikasikan.
 
 ## Search behavior
 
@@ -52,11 +52,9 @@ Mobile memakai toolbar dan card satu kolom dengan filter overflow lokal. Tablet/
 
 Title dan description Projects bersifat unik. Open Graph dasar tersedia; `og:url` menunggu domain produksi dan tidak ada `og:image` palsu.
 
-## TODO aset dan link
+## Aset dan link
 
-- Screenshot proyek asli dan izin publikasi.
-- Repository serta live URL yang telah dikonfirmasi.
-- Domain produksi.
+Tiga screenshot Langflow aman tersedia sebagai aset lokal. Screenshot Main Flow tidak dipublikasikan karena memperlihatkan area credential yang dimasking. Kelotra memakai visual code-style design system karena belum ada screenshot aplikasi yang terverifikasi. Link repository Kelotra dan dashboard Supermarket telah dikonfirmasi; live demo Kelotra serta repository/demo Langflow belum tersedia.
 
 ## Cara menguji
 

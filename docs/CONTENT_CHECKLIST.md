@@ -2,6 +2,12 @@
 
 ## Sudah dikonfirmasi
 
+- [x] Foto profil formal pengguna tersedia dan diizinkan untuk digunakan pada Home dan About.
+- [x] Analisis Bisnis Supermarket Indonesia beserta dashboard Looker Studio tersedia sebagai project publik.
+- [x] School Administration Knowledge Assistant tersedia sebagai project AI Agent berbasis knowledge base simulasi.
+- [x] Kelotra — Asset & Inventory Management System tersedia sebagai full-stack MVP lokal berbasis Kotlin Multiplatform; repository publik: https://github.com/RadenAlta/kelotra.
+- [x] Kelotra belum memiliki production deployment; screenshot aplikasi belum tersedia dan credential local development tidak dipublikasikan.
+- [x] Screenshot Langflow 01, 02, dan 03 telah diperiksa dan aman untuk Gallery; Main Flow tidak dipublikasikan karena memperlihatkan area credential yang dimasking.
 - [x] Nama: Raden Dimas Taufik Rahmat.
 - [x] NIM: 250401010460.
 - [x] Kelas: IF209.

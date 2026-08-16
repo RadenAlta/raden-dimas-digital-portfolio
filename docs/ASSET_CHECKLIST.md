@@ -4,9 +4,9 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 
 | Aset | Lokasi rencana | Nama rekomendasi | Format | Ukuran/rasio rekomendasi | Status | Halaman |
 |---|---|---|---|---|---|---|
-| Foto profil utama | `assets/images/profile/` | `raden-dimas-profile.webp` | WebP, fallback JPEG bila perlu | 1200×1200, 1:1 | TODO | Home, About |
+| Foto profil utama | `assets/images/profile/` | `raden-dimas-profile.jpg` | JPEG | 1576×2364 | Tersedia | Home, About |
 | Foto profil kecil | `assets/images/profile/` | `raden-dimas-profile-small.webp` | WebP | 320×320, 1:1 | TODO | Header/card/footer bila dipakai |
-| Gambar proyek | `assets/images/projects/` | `project-[slug].webp` | WebP/PNG untuk UI detail | 1600×1000, 8:5 | TODO per proyek | Home, Projects |
+| Gambar proyek | `assets/images/projects/school-administration-assistant/` | `01-playground-daftar-ulang.png`, `02-playground-guardrail-wali-kelas.png`, `03-prompt-template.png` | PNG | Rasio asli | Tersedia dan diperiksa | Projects, Gallery |
 | Gambar galeri | `assets/images/gallery/` | `gallery-[slug].webp` | WebP/JPEG | min. 1600px sisi panjang; rasio asli dicatat | TODO per item | Gallery |
 | Gambar sertifikat | `assets/images/certificates/` | `certificate-[slug].webp` | WebP/JPEG; PDF asli hanya bila diizinkan | 1600×1131, kira-kira A4 landscape | TODO per sertifikat | Credentials |
 | Poster video | `assets/images/backgrounds/` | `video-poster.webp` | WebP/JPEG | 1280×720, 16:9 | TODO | Video |
@@ -32,9 +32,8 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 
 ## TODO aset prioritas
 
-1. Foto profil utama dan izin publikasinya.
-2. Minimal satu proyek nyata beserta gambar yang sah.
-3. Aset galeri dan caption.
+1. Media khusus halaman Video dan transkrip.
+2. Media khusus halaman Audio dan transkrip.
 4. Sertifikat dan data verifikasi yang boleh tampil.
 5. Video, poster, caption, deskripsi, dan transcript.
 6. Audio, cover, dan transcript.

@@ -6,7 +6,7 @@
     const count = document.querySelector("#gallery-result-count");
     const empty = document.querySelector("[data-gallery-empty]");
     if (!buttons.length || !items.length || !count || !empty) return;
-    const filter = (token) => { let total = 0; items.forEach((item) => { const show = token === "all" || item.dataset.galleryCategory === token; item.hidden = !show; if (show) total += 1; }); count.textContent = total ? `Menampilkan ${total} gambar` : "Tidak ada gambar yang sesuai"; empty.hidden = total !== 0; };
+    const filter = (token) => { let total = 0; items.forEach((item) => { const categories = item.dataset.galleryCategory.split(/\s+/); const show = token === "all" || categories.includes(token); item.hidden = !show; if (show) total += 1; }); count.textContent = total ? `Menampilkan ${total} gambar` : "Tidak ada gambar yang sesuai"; empty.hidden = total !== 0; };
     buttons.forEach((button) => button.addEventListener("click", () => { buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button))); filter(button.dataset.galleryFilter); }));
     document.querySelector("[data-gallery-reset]")?.addEventListener("click", () => buttons[0].click());
     filter("all");
