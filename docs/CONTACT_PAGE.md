@@ -1,6 +1,6 @@
 # Contact Page — Milestone 10
 
-Contact menampilkan enam metode terverifikasi: email, WhatsApp, LinkedIn, GitHub, Instagram, dan Bogor, Indonesia. Form statis memvalidasi nama, email, topik, subjek, pesan, dan persetujuan di browser. Tidak ada action server, fetch, database, storage, cookie, atau analytics.
+Contact menampilkan enam metode terverifikasi: email, WhatsApp, LinkedIn, GitHub, Instagram, dan Bogor, Jawa Barat, Indonesia. Setiap kartu memakai ikon SVG lokal yang sesuai dengan jenis kanal; ikon dekoratif menggunakan `currentColor`, `aria-hidden`, dan `focusable="false"`. Kartu lokasi hanya menampilkan lokasi umum tanpa alamat jalan atau embed peta. Form statis memvalidasi nama, email, topik, subjek, pesan, dan persetujuan di browser. Tidak ada action server, fetch, database, storage, cookie, atau analytics.
 
 Submit valid membuat mailto dengan subject dan body melalui `encodeURIComponent`, lalu menampilkan prepared-email state. Pengguna harus memilih “Buka Aplikasi Email” dan tetap menekan kirim di aplikasi email. Error terkait melalui `aria-describedby`, `aria-invalid`, field error, dan summary. Copy hanya menyalin alamat email dan melaporkan hasil lewat `aria-live`.
 
