@@ -136,6 +136,7 @@
 .profile-icon-list dd { margin:var(--space-1) 0 0; font-weight:var(--font-weight-semibold); }
 .about-story > .stack { max-width: var(--content-reading-width); }
 .values-grid, .about-technology-groups, .soft-skills-grid, .profile-support-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+.values-grid, .soft-skills-grid { margin-block-start: var(--space-6); }
 .value-card { display: grid; align-content: start; gap: var(--space-3); }
 .value-card > span { color: var(--color-primary); font-family: var(--font-mono); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
 .education-card { display: grid; gap: var(--space-5); }
@@ -174,7 +175,7 @@
 .projects-hero p:not(.eyebrow, .notice) { color: var(--color-text-muted); font-size: var(--font-size-md); }
 .projects-page .portfolio-summary { display: grid; gap: var(--space-4); }
 .project-process { display: grid; gap: var(--space-7); }
-.projects-toolbar { display: grid; gap: var(--space-5); padding: var(--space-5); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
+.projects-toolbar { display: grid; gap: var(--space-5); margin-block-start: var(--space-6); padding: var(--space-5); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
 .project-search { display: grid; gap: var(--space-2); }
 .project-search label, .project-filter-group legend { font-weight: var(--font-weight-semibold); }
 .project-filter-group { min-width: 0; padding: 0; border: 0; }
