@@ -25,5 +25,6 @@
   .typing-text__cursor{display:none;animation:none}
   .gallery-dialog[open],.gallery-dialog[open]::backdrop,.form-error-summary:not([hidden]),.prepared-email:not([hidden]){animation:none}
   :is(.highlight-grid .card,.focus-card,.project-card,.credential-card,.gallery-item,.value-card,.media-card,.contact-method-card,.success-step):is(:hover,:focus-within),.profile-frame:hover,.button:active:not(:disabled){transform:none}
+  .feature-icon{transition:none}.icon-card:is(:hover,:focus-within) .feature-icon,.focus-card:is(:hover,:focus-within) .feature-icon{transform:none}
   .profile-frame{transition:none}
 }
