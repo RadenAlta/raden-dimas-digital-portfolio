@@ -1,5 +1,9 @@
 /* Responsive foundation mobile-first. */
 @media (min-width: 40rem) {
+  .values-grid,
+  .soft-skills-grid,
+  .projects-toolbar { margin-block-start: var(--space-7); }
+
   .project-grid,
   .project-technologies { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
@@ -63,6 +67,10 @@
   :root {
     --sticky-header-offset: 6rem;
   }
+
+  .values-grid,
+  .soft-skills-grid,
+  .projects-toolbar { margin-block-start: var(--space-8); }
 
   .portfolio-summary,
   .project-process { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: var(--space-10); }
