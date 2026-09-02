@@ -12,9 +12,9 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 
 ## 2. Project scaffold
 
-- **Tujuan:** membuat sembilan HTML aktif dan struktur folder minimum.
-- **File:** seluruh HTML root; folder `assets/` sesuai kebutuhan; file CSS/JS dasar.
-- **Hasil:** semua halaman terbuka dan saling terhubung dengan konten placeholder yang jujur.
+- **Tujuan:** membuat landing page single-page dan halaman pendukung minimum.
+- **File:** `index.html`, `privacy.html`, `success.html`, `404.html`; folder `assets/` sesuai kebutuhan; file CSS/JS dasar.
+- **Hasil:** section utama tersedia melalui anchor `#home`, `#about`, `#experience`, `#projects`, `#skills`, dan `#contact`.
 - **Pemeriksaan:** path relatif, lang, landmark, heading, server lokal, tidak ada broken link.
 - **Dependency:** milestone 1.
 
@@ -29,7 +29,7 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 ## 4. Global navigation and footer
 
 - **Tujuan:** membangun skip link, header, desktop/mobile navigation, footer, theme control, dan back-to-top.
-- **File:** seluruh HTML, CSS komponen, JS navigasi/tema.
+- **File:** seluruh HTML aktif, CSS komponen, JS navigasi/tema.
 - **Hasil:** navigasi konsisten, accessible, dan responsif.
 - **Pemeriksaan:** keyboard, Escape, fokus, active state, 360–1440px, path setiap halaman.
 - **Dependency:** milestone 2–3.
@@ -42,26 +42,26 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 - **Pemeriksaan:** heading, CTA, responsive hero, placeholder aset, performa awal.
 - **Dependency:** milestone 3–4 dan konten minimum.
 
-## 6. About page
+## 6. About page (historical)
 
 - **Tujuan:** menyajikan bio, pendidikan UNSIA, skill kualitatif, minat, dan timeline terverifikasi.
-- **File:** `about.html`, CSS/JS terkait.
+- **File:** dahulu `about.html`; konten kini diringkas pada `index.html#about` dan `index.html#experience`.
 - **Hasil:** profil informatif; formal education hanya UNSIA S1 Informatika.
 - **Pemeriksaan:** akurasi data, label skill tanpa persentase, heading, timeline keyboard/reduced motion.
 - **Dependency:** milestone 3–4 dan konfirmasi bio/skill.
 
-## 7. Projects page
+## 7. Projects page (historical)
 
 - **Tujuan:** menampilkan proyek nyata dengan filter yang usable.
-- **File:** `projects.html`, CSS kartu/filter, JS filter.
+- **File:** dahulu `projects.html`; tiga project pilihan kini ditampilkan pada `index.html#projects` tanpa halaman katalog terpisah.
 - **Hasil:** katalog proyek dengan empty state bila data belum tersedia.
 - **Pemeriksaan:** data/tautan, filter mouse-keyboard, state tanpa JS, gambar dan alt text.
 - **Dependency:** milestone 3–4 dan data proyek terverifikasi.
 
-## 8. Gallery and credentials
+## 8. Gallery and credentials (historical)
 
 - **Tujuan:** membangun gallery filter/lightbox dan daftar kredensial.
-- **File:** `gallery.html`, `credentials.html`, CSS/JS gallery/lightbox.
+- **File:** dahulu `gallery.html` dan `credentials.html`; halaman tersebut telah dihapus dari arsitektur publik single-page.
 - **Hasil:** visual dan sertifikat nyata dapat ditelusuri secara accessible.
 - **Pemeriksaan:** focus trap/return, Escape, caption, alt, ID kredensial, aset hilang, mobile.
 - **Dependency:** milestone 3–4 dan aset/data terverifikasi.
@@ -69,10 +69,12 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 ## 9. Contact and supporting pages
 
 - **Tujuan:** membuat form akademik statis, success, privacy, dan 404.
-- **File:** `contact.html`, `success.html`, `privacy.html`, `404.html`, CSS/JS validasi.
+- **File:** form Contact kini berada di `index.html#contact`; halaman pendukung yang aktif adalah `success.html`, `privacy.html`, dan `404.html`.
 - **Hasil:** form berlabel dengan required/email validation, counter, error accessible, aksi ke Success.
 - **Pemeriksaan:** valid/invalid states, keyboard, tanpa klaim terkirim/tersimpan, direct URL 404/privacy.
 - **Dependency:** milestone 3–4 dan aturan form.
+
+Catatan arsitektur saat ini: `video.html` dan `audio.html` juga tidak lagi menjadi halaman publik. Video biner lokal hanya dipakai sebagai dekorasi hero pada `index.html`; tidak ada media player atau halaman audio terpisah.
 
 ## 11. Professional animations
 

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 — Halaman Tidak Ditemukan | Raden Dimas</title>
-    <meta name="description" content="Panduan navigasi ketika halaman yang dicari tidak tersedia di Raden Dimas Digital Portfolio.">
+    <title>404 — Page Not Found | Raden Dimas</title>
+    <meta name="description" content="The page you are looking for could not be found on the Raden Dimas Digital Portfolio.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="404 — Halaman Tidak Ditemukan | Raden Dimas">
-    <meta property="og:description" content="Panduan navigasi ketika halaman yang dicari tidak tersedia di Raden Dimas Digital Portfolio.">
+    <meta property="og:title" content="404 — Page Not Found | Raden Dimas">
+    <meta property="og:description" content="The page you are looking for could not be found on the Raden Dimas Digital Portfolio.">
     <meta property="og:site_name" content="Raden Dimas Digital Portfolio">
-    <meta property="og:locale" content="id_ID">
+    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
@@ -25,7 +25,7 @@
     <script src="assets/js/animations.js" defer></script>
 </head>
 <body id="top" class="site-body page--support page--error">
-    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header" data-site-header>
       <div class="container site-header__inner">
@@ -33,25 +33,25 @@
 
         <button class="menu-toggle button button--ghost" type="button"
                 aria-expanded="false" aria-controls="primary-navigation"
-                aria-label="Buka menu utama" data-menu-toggle>
+                aria-label="Open main menu" data-menu-toggle>
           <span class="menu-toggle__icon" aria-hidden="true"></span>
           <span class="menu-toggle__label">Menu</span>
         </button>
 
-        <nav id="primary-navigation" class="site-nav" aria-label="Navigasi utama" data-site-nav>
+        <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation" data-site-nav>
           <ul class="site-nav__list">
               <li><a class="site-nav__link" href="index.html">Home</a></li>
-              <li><a class="site-nav__link" href="about.html">About Me</a></li>
-              <li><a class="site-nav__link" href="projects.html">Projects</a></li>
-              <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
-              <li><a class="site-nav__link" href="credentials.html">Credentials</a></li>
-              <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+              <li><a class="site-nav__link" href="index.html#about">About</a></li>
+              <li><a class="site-nav__link" href="index.html#experience">Experience</a></li>
+              <li><a class="site-nav__link" href="index.html#projects">Projects</a></li>
+              <li><a class="site-nav__link" href="index.html#skills">Skills</a></li>
+              <li><a class="site-nav__link" href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
 
         <div class="header-actions cluster">
           <button class="theme-toggle button button--ghost" type="button"
-                  aria-label="Aktifkan tema terang" title="Aktifkan tema terang"
+                  aria-label="Enable light theme" title="Enable light theme"
                   data-theme-toggle>
             <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24"
                  aria-hidden="true" focusable="false">
@@ -75,7 +75,7 @@
           </a>
         </div>
       </div>
-      <button class="nav-overlay" type="button" aria-label="Tutup menu utama"
+      <button class="nav-overlay" type="button" aria-label="Close main menu"
               data-nav-overlay hidden></button>
     </header>
 
@@ -84,26 +84,26 @@
         <div class="container error-page__layout">
           <div class="error-page__content stack">
             <svg class="error-page__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M14 18h36v28H14zM14 20l18 14 18-14M24 43l8-7 8 7"/></svg>
-            <p class="eyebrow">Halaman Tidak Ditemukan</p>
+            <p class="eyebrow">Page Not Found</p>
             <p class="error-page__code" aria-hidden="true">404</p>
-            <h1 id="error-title">Halaman tidak ditemukan.</h1>
-            <p class="error-page__description">Sepertinya link ini tersesat.</p>
-            <div class="cluster error-page__actions" aria-label="Tindakan pemulihan">
+            <h1 id="error-title">This page could not be found.</h1>
+            <p class="error-page__description">The link may be outdated or the page may have moved.</p>
+            <div class="cluster error-page__actions" aria-label="Recovery actions">
               <a class="button button--primary" href="index.html">Home</a>
-              <a class="button button--secondary" href="projects.html">Projects</a>
+              <a class="button button--secondary" href="index.html#projects">Projects</a>
             </div>
           </div>
           <aside class="error-page__help card stack" aria-labelledby="helpful-links-title">
-            <h2 id="helpful-links-title">Tautan yang mungkin membantu</h2>
-            <nav aria-label="Tautan bantuan halaman 404">
+            <h2 id="helpful-links-title">Helpful links</h2>
+            <nav aria-label="404 page helpful links">
               <ul class="error-page__links">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="credentials.html">Credentials</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
               </ul>
             </nav>
-            <a class="button button--ghost" href="contact.html">Contact</a>
+            <a class="button button--ghost" href="index.html#contact">Contact</a>
           </aside>
         </div>
       </section>
@@ -120,38 +120,38 @@
         </section>
 
         <nav class="site-footer__nav" aria-labelledby="footer-quick-links">
-          <h2 id="footer-quick-links" class="site-footer__heading">Quick links</h2>
+          <h2 id="footer-quick-links" class="site-footer__heading">Explore</h2>
           <ul class="site-footer__links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
 
         <section class="site-footer__support" aria-labelledby="footer-support-title">
-          <h2 id="footer-support-title" class="site-footer__heading">Informasi</h2>
+          <h2 id="footer-support-title" class="site-footer__heading">Elsewhere</h2>
           <ul class="site-footer__links">
             <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="#top" data-footer-to-top>Kembali ke atas</a></li>
+            <li><a href="#top" data-footer-to-top>Back to top</a></li>
           </ul>
-          <ul class="social-links" aria-label="Kontak dan media sosial">
-            <li><a class="social-link social-link--icon" href="mailto:radendimas.work@gmail.com" aria-label="Kirim email kepada Raden Dimas" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg></a></li>
-            <li><a class="social-link social-link--icon" href="https://www.linkedin.com/in/raden-dimas-taufik-rahmat/" target="_blank" rel="noopener noreferrer" aria-label="Buka LinkedIn Raden Dimas" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="9" width="3" height="10"></rect><circle cx="5.5" cy="5.5" r="1.5"></circle><path d="M11 19V9h3v1.5c1-1.3 5-1.8 5 3.4V19h-3v-4.5c0-2.2-2-2-2-0.1V19h-3Z"></path></svg></a></li>
-            <li><a class="social-link social-link--icon" href="https://github.com/RadenAlta" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub Raden Dimas" title="GitHub"><svg class="social-link__icon--fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.84a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path></svg></a></li>
+          <ul class="social-links" aria-label="Public contact links">
+            <li><a class="social-link social-link--icon" href="mailto:radendimas.work@gmail.com" aria-label="Send email to Raden Dimas" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg></a></li>
+            <li><a class="social-link social-link--icon" href="https://www.linkedin.com/in/raden-dimas-taufik-rahmat/" target="_blank" rel="noopener noreferrer" aria-label="Open Raden Dimas LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="9" width="3" height="10"></rect><circle cx="5.5" cy="5.5" r="1.5"></circle><path d="M11 19V9h3v1.5c1-1.3 5-1.8 5 3.4V19h-3v-4.5c0-2.2-2-2-2-0.1V19h-3Z"></path></svg></a></li>
+            <li><a class="social-link social-link--icon" href="https://github.com/RadenAlta" target="_blank" rel="noopener noreferrer" aria-label="Open Raden Dimas GitHub" title="GitHub"><svg class="social-link__icon--fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.84a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path></svg></a></li>
           </ul>
         </section>
 
         <p class="site-footer__copyright">
           &copy; <time datetime="2026" data-current-year>2026</time>
-          Raden Dimas Taufik Rahmat. Proyek UAS Pemrograman Web I.
+          Raden Dimas Taufik Rahmat.
         </p>
       </div>
     </footer>
 
     <button class="back-to-top button button--icon" type="button"
-            aria-label="Kembali ke atas" data-back-to-top>
+            aria-label="Back to top" data-back-to-top>
       <span aria-hidden="true">↑</span>
     </button>
 </body>

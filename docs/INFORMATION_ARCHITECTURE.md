@@ -4,17 +4,17 @@
 
 ```text
 Home (index.html)
-├── About Me (about.html)
-├── Projects (projects.html)
-├── Gallery (gallery.html)
-├── Credentials (credentials.html)
-├── Contact (contact.html)
-│   └── Success (success.html)
+├── About (#about)
+├── Experience (#experience)
+├── Projects (#projects)
+├── Skills (#skills)
+├── Contact (#contact)
 ├── Privacy (privacy.html)
+├── Success (success.html)
 └── 404 (404.html)
 ```
 
-Halaman utama—Home, About Me, Projects, Gallery, Credentials, dan Contact—tersedia pada navigasi utama. Success, Privacy, dan 404 tetap dapat diakses melalui alur masing-masing.
+Halaman utama memuat seluruh section portfolio. Success, Privacy, dan 404 tetap menjadi halaman pendukung terpisah.
 
 ## Daftar halaman dan konten
 
@@ -22,10 +22,8 @@ Halaman utama—Home, About Me, Projects, Gallery, Credentials, dan Contact—te
 |---|---|---|
 | Home | Memberi gambaran singkat dan jalur eksplorasi | Hero, tagline, ringkasan profil, bidang minat, karya pilihan `TODO`, CTA |
 | About / Experience / Skills | Anchor sections pada `index.html` | Bio ringkas, milestone terverifikasi, dan skill yang sedang dipelajari |
-| Projects | Menampilkan karya terverifikasi | Filter kategori, kartu proyek, teknologi, deskripsi dan tautan `TODO` |
-| Gallery | Menampilkan dokumentasi visual | Filter, grid gambar lokal, caption, lightbox; seluruh item `TODO` hingga aset tersedia |
-| Credentials | Menampilkan sertifikat/kredensial nyata | Daftar sertifikat, penerbit, tanggal dan ID hanya jika terverifikasi |
-| Contact | Memberi cara menghubungi | Form nama/email/pesan, counter karakter, penjelasan simulasi statis, kontak terverifikasi `TODO` |
+| Projects | Menampilkan karya terverifikasi | Tiga project pilihan, teknologi, deskripsi, dan tautan yang tersedia pada `index.html#projects` |
+| Contact | Memberi cara menghubungi | Kanal publik dan form nama/email/pesan pada `index.html#contact` |
 | Success | Mengonfirmasi alur form statis | Pesan bahwa formulir selesai diproses di sisi halaman tanpa klaim tersimpan/terkirim, tautan kembali |
 | Privacy | Menjelaskan privasi situs | Penjelasan form statis, penyimpanan preferensi sesi/tema, media lokal, pembaruan kebijakan |
 | 404 | Memulihkan navigasi | Pesan halaman tidak ditemukan, tautan Home dan halaman utama |
@@ -33,8 +31,8 @@ Halaman utama—Home, About Me, Projects, Gallery, Credentials, dan Contact—te
 ## Hubungan navigasi
 
 - Logo/nama situs selalu menuju `index.html`.
-- Header menyediakan akses ke seluruh halaman konten utama.
-- CTA kontekstual menghubungkan Home → About/Projects/Contact, About → Projects, Projects → Contact, Gallery → Credentials, dan media → Contact.
+- Header menyediakan akses ke section `#home`, `#about`, `#experience`, `#projects`, `#skills`, dan `#contact`.
+- CTA kontekstual menggunakan anchor pada `index.html`.
 - Form Contact menggunakan aksi ke `success.html` pada versi akademik statis.
 - Success dan 404 menyediakan jalur kembali ke Home.
 - Footer menyediakan tautan halaman utama, Privacy, dan tombol kembali ke atas.
@@ -71,12 +69,7 @@ Setiap halaman hanya memiliki satu `h1`; judul section utama memakai `h2`, dan s
 
 | Halaman | H1 | H2 yang direncanakan |
 |---|---|---|
-| Home | Raden Dimas Taufik Rahmat | Tentang Singkat, Bidang Minat, Karya Pilihan, Mari Terhubung |
-| About Me | Tentang Saya | Profil, Pendidikan, Bidang yang Dipelajari, Perjalanan Belajar |
-| Projects | Proyek | Daftar Proyek, Proses Belajar/CTA |
-| Gallery | Galeri | Filter Galeri, Dokumentasi |
-| Credentials | Kredensial | Sertifikat, Pembelajaran Berkelanjutan |
-| Contact | Kontak | Formulir Kontak, Informasi Kontak |
+| Home | Hi, I’m Raden Dimas Taufik Rahmat. | About, Experience, Projects, Skills, Contact |
 | Success | Formulir Selesai | Langkah Berikutnya |
 | Privacy | Privasi | Data Formulir, Penyimpanan Lokal, Pembaruan |
 | 404 | Halaman Tidak Ditemukan | Pilihan Navigasi |
@@ -87,9 +80,7 @@ Nama section dapat disesuaikan saat implementasi, tetapi hierarki dan satu `h1` 
 
 ```text
 /
-├── index.html, about.html, projects.html, gallery.html
-├── credentials.html, contact.html
-├── success.html, privacy.html, 404.html
+├── index.html, success.html, privacy.html, 404.html
 ├── assets/
 │   ├── css/
 │   ├── js/

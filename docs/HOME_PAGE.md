@@ -2,7 +2,7 @@
 
 ## Tujuan
 
-Home memperkenalkan Raden Dimas Taufik Rahmat sebagai mahasiswa aktif S1 Informatika Universitas Siber Asia, memberi gambaran arah pembelajaran, dan menyediakan jalur ke About, Projects, serta Contact.
+Home adalah landing page single-page yang memperkenalkan Raden Dimas Taufik Rahmat sebagai mahasiswa aktif S1 Informatika Universitas Siber Asia. Semua area publik utama berada di `index.html` dan dinavigasi melalui anchor About, Experience, Projects, Skills, serta Contact.
 
 ## Struktur section
 
@@ -38,7 +38,7 @@ Empat kartu mencakup Web Development, Mobile Development, Data & Analytics, dan 
 
 ## Featured projects
 
-Home memprioritaskan Kelotra, Analisis Bisnis Supermarket Indonesia, dan School Administration Knowledge Assistant, lalu Digital Portfolio. Semua detail menuju anchor kartu yang sesuai di `projects.html`; tidak ada live demo palsu.
+Home memprioritaskan tepat tiga project: Kelotra, Analisis Bisnis Supermarket Indonesia, dan School Administration Knowledge Assistant. Project ditampilkan langsung pada section `index.html#projects`; tautan eksternal hanya digunakan ketika URL repository atau dashboard telah tersedia.
 
 ## Learning journey
 
@@ -50,7 +50,7 @@ Teknologi dikelompokkan menjadi Web, Mobile, Data, dan Tools. Daftar menggunakan
 
 ## CTA
 
-CTA mengundang diskusi dan kolaborasi proyek pembelajaran. Tautan hanya menuju halaman lokal Contact dan Projects, tanpa klaim ketersediaan kerja profesional.
+CTA mengundang diskusi dan kolaborasi proyek pembelajaran. Tautan menuju `index.html#contact` dan `index.html#projects`, tanpa klaim ketersediaan kerja profesional.
 
 ## Responsive behavior
 
@@ -78,7 +78,7 @@ Layout mobile-first. Pada mobile seluruh bagian satu kolom, pada tablet kartu me
 
 ## Belum diimplementasikan
 
-Typing animation, terminal loading screen, canvas network, scroll reveal, counter, floating card, dan animasi kompleks lain belum dibuat. Halaman About dan Projects belum dikembangkan lebih lanjut pada milestone ini.
+Typing animation, terminal loading screen, canvas network, scroll reveal, counter, floating card, dan animasi kompleks lain belum dibuat. Halaman privacy, success, dan 404 tetap menjadi halaman pendukung terpisah.
 
 ## Cara menguji
 
