@@ -10,10 +10,10 @@ Status menggunakan `PASS`, `FAIL`, `PENDING`, atau `NOT APPLICABLE`. Hanya pemer
 | Repository, branch, dan remote | PASS | Repository `RadenAlta/raden-dimas-digital-portfolio`, branch `main`, remote origin sesuai. |
 | GitHub Pages deployment | PASS | Konfirmasi pengguna/API: built, public, HTTPS, source `main` root, deployment commit berhasil. |
 | Production URL availability | FAIL | Uji browser pada finalisasi ini membuka halaman GitHub Pages “Site not found”; perlu periksa ulang Pages Settings/deployment lalu regression test. |
-| 11 HTML | PASS | Jumlah source tepat sebelas halaman. |
+| 9 HTML | PASS | Jumlah source tepat sembilan halaman aktif. |
 | Title, description, H1, dan ID | PASS | Audit otomatis source: unik, satu H1 per halaman, tanpa duplicate ID. |
-| Canonical | PASS | Tepat sepuluh URL absolut; tidak ada canonical pada 404. |
-| Open Graph URL | PASS | Tepat sepuluh `og:url`, sama dengan canonical halaman. |
+| Canonical | PASS | Tepat delapan URL absolut; tidak ada canonical pada 404. |
+| Open Graph URL | PASS | Tepat delapan `og:url`, sama dengan canonical halaman. |
 | Sitemap | PASS | XML valid, sembilan halaman SEO, tanpa Success atau 404. |
 | Robots | PASS | Allow `/` dan Sitemap URL production final. |
 | Manifest | PASS | JSON valid dan favicon lokal tersedia. |
@@ -24,7 +24,6 @@ Status menggunakan `PASS`, `FAIL`, `PENDING`, atau `NOT APPLICABLE`. Hanya pemer
 | Privacy dan penyimpanan | PASS | Website statis; form tidak disimpan; localStorage hanya untuk theme key `raden-portfolio-theme`. |
 | Sensitive/public files | PASS | Tidak ditemukan `.env`, API key, token/password, source PDF, atau credential JSON pada project. |
 | Hero video dan poster | PASS | Path source lokal tersedia; izin penggunaan publik terdokumentasi. |
-| Video/Audio page | PASS | Fallback faktual tersedia; tidak mengklaim media final. |
 | Custom 404 source | PASS | `404.html` tersedia dan dikonfirmasi dikenali GitHub Pages. |
 | Actual portfolio production rendering | PENDING | PENDING MANUAL TEST setelah URL tidak lagi menampilkan “Site not found”. |
 | Dark/light visual quality | PENDING | PENDING MANUAL TEST. |

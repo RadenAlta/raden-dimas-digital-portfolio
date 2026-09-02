@@ -70,7 +70,7 @@ Konsep **Professional Modern IT Student Portfolio**: dark-first, bersih, elegan,
 
 - Semua halaman wajib tersedia, saling terhubung, dan dapat dibuka pada server statis.
 - Tampilan stabil pada lebar 360, 390, 768, 1024, dan 1440 piksel tanpa overflow horizontal.
-- Navigasi, formulir, galeri, lightbox, audio, video, tema, dan animasi dapat digunakan dengan keyboard.
+- Navigasi, formulir, galeri, lightbox, video hero dekoratif, tema, dan animasi dapat digunakan dengan keyboard.
 - Struktur semantik, heading, focus state, label, alt text, transcript, contrast, dan reduced motion memenuhi rencana aksesibilitas.
 - Tidak ada broken link, kesalahan console, aset tak sengaja hilang, atau data palsu.
 - Kode mudah dibaca dan dijelaskan dalam konteks Pemrograman Web I.

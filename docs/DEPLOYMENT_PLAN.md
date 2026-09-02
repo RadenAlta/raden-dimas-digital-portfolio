@@ -30,7 +30,7 @@ Platform final dipilih pengguna setelah preview kedua opsi atau berdasarkan kebu
 
 - Semua halaman root merujuk aset melalui `assets/...` dan halaman melalui nama file relatif.
 - Hindari path berawalan `/` bila deployment GitHub Pages memakai subpath.
-- Periksa link, gambar, poster, track caption, audio, video, PDF, favicon, dan social preview.
+- Periksa link, gambar, poster hero, video dekoratif, PDF, favicon, dan social preview.
 - Uji direct URL serta refresh setiap halaman pada production.
 - Periksa filename case dan karakter aman.
 
@@ -48,7 +48,7 @@ Platform final dipilih pengguna setelah preview kedua opsi atau berdasarkan kebu
 - [ ] Tidak ada broken link, missing asset, atau console error.
 - [ ] Path bekerja pada subpath dan case-sensitive host.
 - [ ] Form valid mengarah ke Success tanpa klaim penyimpanan/pengiriman.
-- [ ] 404, Privacy, video, audio, caption, transcript, dan CV diuji.
+- [ ] 404, Privacy, video dekoratif Home, dan CV diuji.
 - [ ] Lima viewport wajib, keyboard, contrast, dan reduced motion diuji.
 - [ ] Gambar/media dioptimalkan dan tidak autoplay.
 - [ ] Favicon, social preview, robots/canonical strategy ditinjau.
@@ -60,7 +60,7 @@ Platform final dipilih pengguna setelah preview kedua opsi atau berdasarkan kebu
 1. Buka Home dan setiap halaman melalui navigasi production.
 2. Buka URL halaman langsung dan lakukan refresh.
 3. Uji URL salah untuk memastikan pemulihan 404.
-4. Uji form, theme persistence, gallery/lightbox, project filter, video/audio, dan download CV.
+4. Uji form, theme persistence, gallery/lightbox, project filter, video hero, dan download CV.
 5. Uji keyboard dan reduced motion pada production.
 6. Periksa console, network 404, MIME type, mixed content, dan caching.
 7. Jalankan audit performance/accessibility dan bandingkan dengan local.

@@ -28,7 +28,7 @@ Interaksi dibangun dengan progressive enhancement: navigasi mobile, tema dark/li
 
 ## Multimedia dan privasi
 
-Home memakai binary background video lokal yang telah dikonfirmasi untuk penggunaan publik, tanpa audio dan sebagai elemen dekoratif. Halaman Video dan Audio khusus masih menggunakan fallback faktual karena media final belum tersedia. Sertifikat dan gambar yang dipublikasikan memakai aset lokal; source PDF, credential JSON, hash, token, dan secret tidak dipublikasikan.
+Home memakai binary background video lokal yang telah dikonfirmasi untuk penggunaan publik, tanpa audio dan sebagai elemen dekoratif. Halaman multimedia khusus tidak lagi menjadi bagian portfolio setelah UAS selesai. Sertifikat dan gambar yang dipublikasikan memakai aset lokal; source PDF, credential JSON, hash, token, dan secret tidak dipublikasikan.
 
 ## SEO dan deployment
 
@@ -36,6 +36,6 @@ Sepuluh halaman publik memiliki canonical serta `og:url` absolut yang sesuai. `4
 
 ## Pengujian dan bukti
 
-Audit source memeriksa jumlah halaman, metadata, heading, ID, path internal, syntax JavaScript, struktur CSS, manifest, sitemap, robots, privasi, dan file sensitif. Konfigurasi/API GitHub Pages telah dikonfirmasi, tetapi uji browser saat finalisasi membuka halaman “Site not found”; keterjangkauan endpoint harus diperiksa kembali setelah deployment. Dark/light, responsive layout, keyboard, typing, pemutaran video, filter, lightbox, Contact mailto, dan visual custom 404 tetap **PENDING MANUAL TEST**.
+Audit source memeriksa jumlah halaman, metadata, heading, ID, path internal, syntax JavaScript, struktur CSS, manifest, sitemap, robots, privasi, dan file sensitif. Konfigurasi/API GitHub Pages telah dikonfirmasi, tetapi uji browser saat finalisasi membuka halaman “Site not found”; keterjangkauan endpoint harus diperiksa kembali setelah deployment. Dark/light, responsive layout, keyboard, typing, pemutaran video hero dekoratif, filter, lightbox, Contact mailto, dan visual custom 404 tetap **PENDING MANUAL TEST**.
 
 Daftar 23 bukti screenshot produksi tersedia di `SCREENSHOT_PLAN.md`. Screenshot tidak dibuat dalam finalisasi source ini dan harus diambil dari production secara manual tanpa rekayasa.

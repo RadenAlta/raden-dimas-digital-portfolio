@@ -9,11 +9,6 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 | Gambar proyek | `assets/images/projects/school-administration-assistant/` | `01-playground-daftar-ulang.png`, `02-playground-guardrail-wali-kelas.png`, `03-prompt-template.png` | PNG | Rasio asli | Tersedia dan diperiksa | Projects, Gallery |
 | Gambar galeri | `assets/images/gallery/` | `gallery-[slug].webp` | WebP/JPEG | min. 1600px sisi panjang; rasio asli dicatat | TODO per item | Gallery |
 | Gambar sertifikat | `assets/images/certificates/` | `certificate-[slug].webp` | WebP/JPEG; PDF asli hanya bila diizinkan | 1600×1131, kira-kira A4 landscape | TODO per sertifikat | Credentials |
-| Poster video | `assets/images/backgrounds/` | `video-poster.webp` | WebP/JPEG | 1280×720, 16:9 | TODO | Video |
-| Video referensi teknologi | `assets/videos/` | `android-development-agentic-ai.mp4` | MP4 | Rasio asli; stage player 16:9 | Tersedia, lengkap, dan dikreditkan | Video |
-| Caption video | `assets/videos/` | `portfolio-introduction-id.vtt` | WebVTT | Sinkron dengan video | TODO | Video |
-| Audio ambience fokus | `assets/audio/` | `focus-study-medieval-fantasy.mp3` | MP3 | File lengkap; `preload="metadata"` | Tersedia, lengkap, dan dikreditkan | Audio |
-| Cover audio | `assets/images/backgrounds/` | `audio-cover.webp` | WebP/JPEG | 1200×1200, 1:1 | TODO | Audio |
 | CV | `assets/documents/` | `cv-raden-dimas.pdf` | PDF accessible | A4, ukuran file ideal < 2 MB | TODO | About, Contact |
 | Favicon | `assets/images/icons/` | `favicon.svg`, `favicon-32.png` | SVG dan PNG | SVG + 32×32 | TODO | Semua halaman |
 | Social preview | `assets/images/backgrounds/` | `social-preview.webp` | WebP/JPEG/PNG | 1200×630 | TODO | Metadata semua halaman |
@@ -27,19 +22,15 @@ Semua path berikut adalah rencana. Folder aset belum dibuat pada milestone 1. Na
 - Nama, tanggal, credential ID, dan informasi sensitif diperiksa sebelum publikasi.
 - Dimensi eksplisit dicantumkan saat implementasi untuk mencegah layout shift.
 - Gambar dikompresi dengan kualitas baca yang memadai; versi asli disimpan di luar website bila terlalu besar.
-- Video dan audio tidak autoplay; video tanpa transkrip sumber memakai ringkasan yang tidak dilabeli sebagai transkrip, sedangkan audio instrumental tidak memerlukan transkrip.
+- Video dekoratif Home tidak autoplay; poster tersedia sebagai fallback untuk reduced motion atau perangkat yang tidak mendukung pemutaran.
 - Alt text/caption menjelaskan fungsi atau konteks, bukan mengulang nama file.
 
 ## TODO aset prioritas
 
-1. Media khusus halaman Video dan transkrip.
-2. Media khusus halaman Audio dan transkrip.
-4. Sertifikat dan data verifikasi yang boleh tampil.
-5. Video, poster, caption, deskripsi, dan transcript.
-6. Audio, cover, dan transcript.
-7. CV yang telah ditinjau untuk informasi sensitif.
-8. Favicon dan social preview final.
+1. Sertifikat dan data verifikasi yang boleh tampil.
+2. CV yang telah ditinjau untuk informasi sensitif.
+3. Favicon dan social preview final.
 
 ## Catatan Hero binary background
 
-Video final berukuran 990.834 byte, berdurasi 10 detik pada 30 fps, dan tidak memiliki audio. Poster WebP berasal dari frame awal stabil dengan ukuran 1280×720. Aset hanya boleh dipakai sebagai dekorasi Home Hero. Tidak ditemukan watermark atau identitas pribadi pada sampel visual, tetapi sumber dan lisensi belum dikonfirmasi; deployment publik harus menunggu konfirmasi hak penggunaan.
+Video hero berukuran 990.834 byte, berdurasi 10 detik pada 30 fps, dan tidak memiliki audio. Poster WebP berukuran 1280×720 menjadi fallback. Aset hanya dipakai sebagai dekorasi Home Hero dan tidak menjadi halaman Video portfolio.

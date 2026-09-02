@@ -4,7 +4,7 @@
 
 - Setiap dokumen menggunakan `lang="id"`, title unik, serta landmark native `header`, `nav`, `main`, dan `footer`.
 - Gunakan `button` untuk aksi dan `a` untuk navigasi; hindari ARIA bila elemen native sudah cukup.
-- Daftar, figure/caption, time, address, form, video, dan audio memakai elemen native sesuai fungsi.
+- Daftar, figure/caption, time, address, dan form memakai elemen native sesuai fungsi.
 - Status aktif, error, dan pilihan tidak disampaikan dengan warna saja.
 
 ## Skip link dan heading
@@ -27,8 +27,7 @@
 - Gambar informatif memiliki alt text berdasarkan konteks; dekorasi memakai alt kosong.
 - Foto profil menyebut identitas secara ringkas; screenshot proyek menjelaskan UI/fitur yang relevan.
 - Sertifikat memiliki deskripsi teks lengkap di halaman sehingga gambar bukan satu-satunya sumber informasi.
-- Video memiliki controls, poster yang tidak wajib dibaca, deskripsi, caption bila tersedia, dan transcript.
-- Audio memiliki controls dan transcript lengkap; tidak autoplay.
+- Video dekoratif Home memiliki poster fallback, muted, tanpa controls, dan tidak mengubah urutan baca/fokus.
 
 ## Form dan validasi accessible
 
@@ -51,7 +50,7 @@
 - Media query `prefers-reduced-motion: reduce` menonaktifkan atau mempersingkat animasi non-esensial.
 - Konten tidak bergantung pada reveal; posisi final menjadi default.
 - Typing menampilkan kalimat final, canvas tidak berjalan, floating/equalizer statis, dan smooth scroll dinonaktifkan.
-- Tidak ada video/audio autoplay atau flashing content.
+- Video hero dekoratif tidak autoplay dan tidak menimbulkan flashing content.
 
 ## Lightbox focus management
 

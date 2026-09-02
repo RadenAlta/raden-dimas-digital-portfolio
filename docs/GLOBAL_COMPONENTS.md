@@ -121,7 +121,7 @@ Reduced motion menghilangkan durasi transisi panel menu, header, ikon, button, d
 
 ## Belum diimplementasikan
 
-Hero Home, typing animation, canvas, intro terminal, scroll reveal, filter proyek, lightbox galeri, validasi contact, audio/video integration, page transition, dan custom cursor belum dibuat.
+Hero Home, typing animation, canvas, intro terminal, scroll reveal, filter proyek, lightbox galeri, validasi contact, video hero dekoratif, page transition, dan custom cursor belum dibuat.
 
 ## TODO Milestone 5
 

@@ -8,15 +8,13 @@ Home (index.html)
 ├── Projects (projects.html)
 ├── Gallery (gallery.html)
 ├── Credentials (credentials.html)
-├── Video (video.html)
-├── Audio (audio.html)
 ├── Contact (contact.html)
 │   └── Success (success.html)
 ├── Privacy (privacy.html)
 └── 404 (404.html)
 ```
 
-Halaman wajib akademik—Home, About Me, Gallery, Video, Audio, dan Contact—selalu tersedia pada navigasi utama. Projects dan Credentials dapat tampil sebagai item langsung atau dikelompokkan secara visual tanpa menyembunyikan akses keyboard.
+Halaman utama—Home, About Me, Projects, Gallery, Credentials, dan Contact—tersedia pada navigasi utama. Success, Privacy, dan 404 tetap dapat diakses melalui alur masing-masing.
 
 ## Daftar halaman dan konten
 
@@ -27,8 +25,6 @@ Halaman wajib akademik—Home, About Me, Gallery, Video, Audio, dan Contact—se
 | Projects | Menampilkan karya terverifikasi | Filter kategori, kartu proyek, teknologi, deskripsi dan tautan `TODO` |
 | Gallery | Menampilkan dokumentasi visual | Filter, grid gambar lokal, caption, lightbox; seluruh item `TODO` hingga aset tersedia |
 | Credentials | Menampilkan sertifikat/kredensial nyata | Daftar sertifikat, penerbit, tanggal dan ID hanya jika terverifikasi |
-| Video | Menyediakan konten video | Player lokal, poster, deskripsi, caption/transcript `TODO` |
-| Audio | Menyediakan perkenalan audio | Player lokal, cover, durasi dari media, transcript `TODO` |
 | Contact | Memberi cara menghubungi | Form nama/email/pesan, counter karakter, penjelasan simulasi statis, kontak terverifikasi `TODO` |
 | Success | Mengonfirmasi alur form statis | Pesan bahwa formulir selesai diproses di sisi halaman tanpa klaim tersimpan/terkirim, tautan kembali |
 | Privacy | Menjelaskan privasi situs | Penjelasan form statis, penyimpanan preferensi sesi/tema, media lokal, pembaruan kebijakan |
@@ -80,8 +76,6 @@ Setiap halaman hanya memiliki satu `h1`; judul section utama memakai `h2`, dan s
 | Projects | Proyek | Daftar Proyek, Proses Belajar/CTA |
 | Gallery | Galeri | Filter Galeri, Dokumentasi |
 | Credentials | Kredensial | Sertifikat, Pembelajaran Berkelanjutan |
-| Video | Video | Video Utama, Deskripsi dan Transkrip |
-| Audio | Audio | Audio Perkenalan, Transkrip |
 | Contact | Kontak | Formulir Kontak, Informasi Kontak |
 | Success | Formulir Selesai | Langkah Berikutnya |
 | Privacy | Privasi | Data Formulir, Penyimpanan Lokal, Pembaruan |
@@ -94,13 +88,12 @@ Nama section dapat disesuaikan saat implementasi, tetapi hierarki dan satu `h1` 
 ```text
 /
 ├── index.html, about.html, projects.html, gallery.html
-├── credentials.html, video.html, audio.html, contact.html
+├── credentials.html, contact.html
 ├── success.html, privacy.html, 404.html
 ├── assets/
 │   ├── css/
 │   ├── js/
 │   ├── images/{profile,projects,gallery,certificates,backgrounds,icons}/
-│   ├── audio/
 │   ├── videos/
 │   └── documents/
 └── docs/{screenshots,wireframes,testing}/

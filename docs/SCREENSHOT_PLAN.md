@@ -13,8 +13,6 @@ Status seluruh screenshot: **PENDING MANUAL CAPTURE**. Ambil bukti nyata dari ht
 | 7 | Gallery lightbox | Dialog terbuka |
 | 8 | Credentials | Sembilan credential |
 | 9 | Credentials filter | Filter aktif |
-| 10 | Video fallback | Fallback media terlihat |
-| 11 | Audio fallback | Fallback media terlihat |
 | 12 | Contact | Metode kontak dan form |
 | 13 | Contact validation | Error validasi terlihat |
 | 14 | Contact prepared email | State draft email siap; jangan kirim email |

@@ -19,7 +19,7 @@ Proyek adalah website statis multi-page dengan `index.html` sebagai entry point 
 
 - Git dan browser modern.
 - Server lokal seperti Live Server atau `python -m http.server 5500`.
-- Sebelas HTML berada di root; CSS, JavaScript, gambar, audio, dan video berada di `assets/`; dokumentasi berada di `docs/`.
+- Sembilan HTML aktif berada di root; CSS, JavaScript, gambar, dan video dekoratif berada di `assets/`; dokumentasi berada di `docs/`.
 - Manifest hanya metadata aplikasi, bukan PWA offline karena tidak ada service worker.
 
 ## Uji sebelum publikasi

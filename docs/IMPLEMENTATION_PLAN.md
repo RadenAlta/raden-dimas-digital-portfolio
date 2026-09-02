@@ -12,7 +12,7 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 
 ## 2. Project scaffold
 
-- **Tujuan:** membuat sebelas HTML dan struktur folder minimum.
+- **Tujuan:** membuat sembilan HTML aktif dan struktur folder minimum.
 - **File:** seluruh HTML root; folder `assets/` sesuai kebutuhan; file CSS/JS dasar.
 - **Hasil:** semua halaman terbuka dan saling terhubung dengan konten placeholder yang jujur.
 - **Pemeriksaan:** path relatif, lang, landmark, heading, server lokal, tidak ada broken link.
@@ -66,15 +66,7 @@ Prinsip dependency: milestone dikerjakan berurutan kecuali dinyatakan lain. Seti
 - **Pemeriksaan:** focus trap/return, Escape, caption, alt, ID kredensial, aset hilang, mobile.
 - **Dependency:** milestone 3–4 dan aset/data terverifikasi.
 
-## 9. Video and audio
-
-- **Tujuan:** mengintegrasikan media lokal tanpa autoplay beserta deskripsi/transcript.
-- **File:** `video.html`, `audio.html`, media lokal, CSS/JS state equalizer.
-- **Hasil:** player native accessible dan fallback tersedia.
-- **Pemeriksaan:** controls, preload, poster/cover, transcript, keyboard, reduced motion, ukuran file.
-- **Dependency:** milestone 3–4 dan media terverifikasi.
-
-## 10. Contact and supporting pages
+## 9. Contact and supporting pages
 
 - **Tujuan:** membuat form akademik statis, success, privacy, dan 404.
 - **File:** `contact.html`, `success.html`, `privacy.html`, `404.html`, CSS/JS validasi.

@@ -20,12 +20,10 @@
 | Gallery | Semua filter, empty state, rapid filter, thumbnail | Item benar, fokus tidak hilang, layout stabil |
 | Projects filter | Kategori, reset/all, tanpa JS, data kosong | Hasil benar dan state dijelaskan dengan teks |
 | Lightbox | Enter/click, Tab loop, Shift+Tab, Escape, close, filter setelah close | Fokus terkelola dan kembali ke pemicu; background tidak interaktif |
-| Video | Play/pause/seek/volume/fullscreen, caption, error file | Tidak autoplay; controls dan transcript tersedia; error dimengerti |
-| Audio | Play/pause/seek/ended, equalizer, error file | Tidak autoplay; status teks benar; transcript tersedia |
 | Theme | System preference, toggle, reload, kedua tema | Preferensi konsisten, tanpa flash signifikan, contrast terjaga |
 | Keyboard | Tab seluruh halaman, Enter/Space/Escape, skip link | Semua fungsi dapat digunakan tanpa mouse dan urutan fokus logis |
 | Reduced motion | Aktifkan preferensi OS/browser lalu reload/interaksi | Intro/typing/canvas/reveal disederhanakan atau nonaktif; konten tetap ada |
-| Missing asset | Ubah/putus path gambar, audio, video secara terkontrol | Alt/fallback/placeholder tidak merusak layout; error tidak menyesatkan |
+| Missing asset | Ubah/putus path gambar atau video hero secara terkontrol | Alt/fallback/placeholder tidak merusak layout; error tidak menyesatkan |
 | Broken link | Jalankan pemeriksaan link internal dan klik manual | Semua target ada dan path bekerja pada root/subpath |
 | Browser console | Load dan gunakan seluruh fitur | Tidak ada error, unhandled rejection, atau warning relevan yang diabaikan |
 | Deployment | Uji URL langsung, refresh nested page, 404, aset, form | Semua path dan MIME benar; 404/Success berfungsi pada host |
@@ -42,7 +40,7 @@
 
 - Jalankan audit Lighthouse setelah konten/aset final.
 - Inspeksi ukuran gambar/media dan loading behavior.
-- Rekam performance saat canvas, scroll reveal, filter, lightbox, dan audio equalizer aktif.
+- Rekam performance saat canvas, scroll reveal, filter, dan lightbox aktif.
 - Pastikan animation frame berhenti pada tab tersembunyi dan tidak ada long task berulang.
 - Uji koneksi lambat melalui throttling bila tersedia.
 

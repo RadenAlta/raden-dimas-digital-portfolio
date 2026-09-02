@@ -34,8 +34,6 @@
 - [x] Pengguna mengizinkan akun GitHub tersebut ditampilkan secara publik.
 - [x] Footer menampilkan GitHub sebagai ikon; username RadenAlta tidak ditampilkan sebagai teks visual.
 - [x] Persiapan Contact: kartu GitHub menampilkan label “GitHub”, nilai “RadenAlta”, action “Lihat GitHub”, dan URL https://github.com/RadenAlta.
-- [x] Video referensi Android Development & Agentic AI tersedia sebagai media lokal lengkap, memakai player HTML5 native, dan dikreditkan ke Android Developers — YouTube.
-- [x] Audio Relaxing Medieval Fantasy — Deep Focus tersedia sebagai media lokal lengkap, memakai player HTML5 native, dan dikreditkan melalui sumber YouTube.
 
 ## Belum dikonfirmasi
 
@@ -48,8 +46,6 @@
 - [ ] `TODO`: metode kontak lain yang ingin ditampilkan.
 - [ ] `TODO`: URL sosial lain yang ingin ditampilkan.
 - [ ] `TODO`: isi galeri dan caption.
-- [ ] `TODO`: isi, deskripsi, caption, dan transcript video.
-- [ ] `TODO`: naskah dan transcript audio.
 - [ ] `TODO`: karya pilihan di Home dan urutannya.
 
 ## Tidak boleh dibuat-buat
@@ -83,7 +79,7 @@ Placeholder tidak boleh terlihat sebagai fakta final dan harus mudah ditemukan m
 4. Daftar sertifikat/kredensial dan data verifikasinya.
 5. Pengalaman atau timeline yang memang ingin dipublikasikan.
 6. Email publik, kanal kontak, dan URL sosial yang diizinkan.
-7. Pilihan karya, galeri, video, audio, dan caption/transcript.
+7. Pilihan karya dan galeri.
 8. Pembaruan CV berikutnya jika isi dokumen berubah.
 9. Preferensi call-to-action utama dan urutan halaman di navigasi.
 10. Persetujuan copy final sebelum deployment.
