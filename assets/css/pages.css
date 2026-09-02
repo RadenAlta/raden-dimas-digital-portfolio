@@ -276,3 +276,32 @@
 .compact-list { display:flex; flex-wrap:wrap; gap:var(--space-2); padding:0; list-style:none; }
 .compact-list li { padding:var(--space-2) var(--space-3); border:var(--border-width) solid var(--color-border); border-radius:var(--radius-full); background:var(--color-surface-elevated); }
 .error-page__icon { width:4rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; color:var(--color-primary); }
+
+/* Single-page portfolio refinements. */
+.portfolio-single-page { overflow: clip; }
+.portfolio-single-page .terminal-profile pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.portfolio-single-page .home-hero__content h1 { max-width: 18ch; font-size: clamp(2.5rem, 5vw, 4rem); }
+.portfolio-single-page .home-hero__background-overlay { background: linear-gradient(90deg, rgb(3 12 25 / 78%), rgb(3 12 25 / 48%) 55%, rgb(3 12 25 / 68%)); }
+[data-theme="light"] .portfolio-single-page .home-hero__background-overlay { background: linear-gradient(90deg, rgb(247 250 252 / 92%), rgb(247 250 252 / 72%) 55%, rgb(247 250 252 / 88%)); }
+.portfolio-single-page .portfolio-skill-grid .card { border-radius: var(--radius-md); background: transparent; box-shadow: none; }
+.portfolio-section { scroll-margin-block-start: calc(var(--control-height-lg) + var(--space-6)); }
+.portfolio-split { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .65fr); gap: clamp(var(--space-7), 6vw, var(--space-11)); align-items: start; }
+.portfolio-note { align-self: center; }
+.portfolio-timeline { margin-block-start: var(--space-7); }
+.portfolio-project-grid { margin-block-start: var(--space-7); }
+.portfolio-skill-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-5); margin-block-start: var(--space-7); }
+.portfolio-skill-grid .card { padding: var(--space-5); }
+.portfolio-contact-methods { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-block-start: var(--space-7); }
+.portfolio-contact-form { margin-block-start: var(--space-9); }
+
+@media (max-width: 63.9375rem) {
+  .portfolio-split { grid-template-columns: 1fr; }
+  .portfolio-skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .portfolio-contact-methods { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 39.9375rem) {
+  .portfolio-skill-grid { grid-template-columns: 1fr; }
+  .portfolio-contact-methods { grid-template-columns: 1fr; }
+  .portfolio-contact-form { margin-block-start: var(--space-7); }
+}

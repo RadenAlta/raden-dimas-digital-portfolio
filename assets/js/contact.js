@@ -5,13 +5,13 @@
 
   function getError(field) {
     const value = field.type === "checkbox" ? field.checked : field.value.trim();
-    if (field.id === "contact-consent") return value ? "" : "Centang persetujuan sebelum menyiapkan email.";
-    if (field.id === "contact-topic") return value ? "" : "Pilih salah satu topik.";
-    if (!value) return {"contact-name":"Masukkan nama Anda.","contact-email":"Masukkan alamat email Anda.","contact-subject":"Masukkan subjek email.","contact-message":"Masukkan pesan."}[field.id] || "Bagian ini wajib diisi.";
-    if (field.id === "contact-name" && value.length < 2) return "Masukkan nama minimal 2 karakter.";
-    if (field.id === "contact-email" && !field.validity.valid) return "Masukkan alamat email yang valid.";
-    if (field.id === "contact-subject" && value.length < 3) return "Subjek minimal 3 karakter.";
-    if (field.id === "contact-message" && value.length < 20) return "Pesan minimal 20 karakter.";
+    if (field.id === "contact-consent") return value ? "" : "Please confirm consent before preparing the email.";
+    if (field.id === "contact-topic") return value ? "" : "Choose a topic.";
+    if (!value) return {"contact-name":"Enter your name.","contact-email":"Enter your email address.","contact-subject":"Enter an email subject.","contact-message":"Enter a message."}[field.id] || "This field is required.";
+    if (field.id === "contact-name" && value.length < 2) return "Name must be at least 2 characters.";
+    if (field.id === "contact-email" && !field.validity.valid) return "Enter a valid email address.";
+    if (field.id === "contact-subject" && value.length < 3) return "Subject must be at least 3 characters.";
+    if (field.id === "contact-message" && value.length < 20) return "Message must be at least 20 characters.";
     if (value.length > field.maxLength && field.maxLength > 0) return `${field.labels?.[0]?.textContent.trim() || "Input"} tidak boleh melebihi ${field.maxLength} karakter.`;
     return "";
   }
@@ -60,7 +60,7 @@
     form.addEventListener("reset", () => { window.setTimeout(() => { clearState(); updateCounter(); form.hidden=false; }, 0); });
     document.querySelector("[data-edit-email]")?.addEventListener("click", () => { if(prepared) prepared.hidden=true; form.hidden=false; form.querySelector("input")?.focus(); });
     document.querySelector("[data-reset-email]")?.addEventListener("click", () => { form.reset(); form.hidden=false; form.querySelector("input")?.focus(); });
-    document.querySelector("[data-copy-email]")?.addEventListener("click", async () => { const status=document.querySelector("[data-copy-status]"); try{await navigator.clipboard.writeText(RECIPIENT); if(status) status.textContent="Alamat email berhasil disalin.";}catch{if(status) status.textContent="Alamat email belum dapat disalin. Salin secara manual.";} });
+    document.querySelector("[data-copy-email]")?.addEventListener("click", async () => { const status=document.querySelector("[data-copy-status]"); try{await navigator.clipboard.writeText(RECIPIENT); if(status) status.textContent="Email address copied.";}catch{if(status) status.textContent="Unable to copy automatically. Please copy it manually.";} });
     updateCounter();
   }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",initContactForm,{once:true}); else initContactForm();

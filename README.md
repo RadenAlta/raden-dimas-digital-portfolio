@@ -14,7 +14,7 @@ Personal digital portfolio Raden Dimas Taufik Rahmat untuk menampilkan profile, 
 
 ## Halaman
 
-`index.html`, `about.html`, `projects.html`, `gallery.html`, `credentials.html`, `contact.html`, `success.html`, `privacy.html`, dan `404.html`.
+`index.html` is the main public single-page portfolio. `privacy.html`, `success.html`, and `404.html` remain as support pages.
 
 ## Struktur
 

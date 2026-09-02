@@ -21,7 +21,7 @@ Halaman utama—Home, About Me, Projects, Gallery, Credentials, dan Contact—te
 | Halaman | Tujuan | Konten utama |
 |---|---|---|
 | Home | Memberi gambaran singkat dan jalur eksplorasi | Hero, tagline, ringkasan profil, bidang minat, karya pilihan `TODO`, CTA |
-| About Me | Menjelaskan profil dan perjalanan belajar | Bio `TODO`, pendidikan formal UNSIA, minat, skill dengan label kualitatif, timeline terverifikasi |
+| About / Experience / Skills | Anchor sections pada `index.html` | Bio ringkas, milestone terverifikasi, dan skill yang sedang dipelajari |
 | Projects | Menampilkan karya terverifikasi | Filter kategori, kartu proyek, teknologi, deskripsi dan tautan `TODO` |
 | Gallery | Menampilkan dokumentasi visual | Filter, grid gambar lokal, caption, lightbox; seluruh item `TODO` hingga aset tersedia |
 | Credentials | Menampilkan sertifikat/kredensial nyata | Daftar sertifikat, penerbit, tanggal dan ID hanya jika terverifikasi |
