@@ -406,6 +406,20 @@
   inset-block-end: var(--space-4);
   box-shadow: var(--shadow-md);
 }
+
+/* Premium floating shell treatment. */
+@media (min-width: 64rem) {
+  .site-header { padding-block: var(--space-2); border-block-end: 0; background: transparent; }
+  .site-header__inner { width: min(100% - (2 * var(--page-gutter)), var(--container-default)); margin-inline: auto; padding: var(--space-2) var(--space-3); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-full); background: color-mix(in srgb, var(--color-surface) 92%, transparent); box-shadow: var(--shadow-sm); backdrop-filter: blur(1rem); }
+  .site-header .site-nav { grid-column: 2; width: auto; justify-self: center; overflow: visible; }
+  .site-header .site-nav__list { min-width: 0; gap: var(--space-1); }
+  .site-header .site-nav__link { min-height: 2.25rem; border: 0; border-radius: var(--radius-full); }
+  .site-header .site-nav__link[aria-current="page"] { background: color-mix(in srgb, var(--color-primary) 16%, transparent); border: 0; }
+  .site-header .header-actions { grid-column: 3; flex-wrap: nowrap; justify-content: flex-end; }
+}
+
+.button--primary { background: linear-gradient(120deg, var(--color-primary), var(--color-secondary)); box-shadow: 0 0.5rem 1.25rem color-mix(in srgb, var(--color-primary) 24%, transparent); }
+.button--primary:hover { background: linear-gradient(120deg, var(--color-primary-hover), var(--color-secondary-hover)); }
 /* Global shell interactions — Milestone 4. */
 html {
   scroll-padding-block-start: calc(var(--control-height-lg) + var(--space-6));
