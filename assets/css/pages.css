@@ -318,6 +318,16 @@
 .portfolio-single-page .portfolio-timeline li::after { display: none; }
 .portfolio-single-page .portfolio-contact-methods .contact-method-card { padding: var(--space-4) 0; border-width: 0 0 1px; border-radius: 0; background: transparent; box-shadow: none; }
 .portfolio-single-page .portfolio-contact-methods .contact-method-card:last-child { border-block-end: 0; }
+.portfolio-single-page .portfolio-contact-methods .contact-method-card { grid-template-rows: auto auto auto; padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); transition: transform 200ms var(--ease-standard), border-color 200ms var(--ease-standard), box-shadow 200ms var(--ease-standard); }
+.portfolio-single-page .portfolio-contact-methods .contact-method-card:hover,
+.portfolio-single-page .portfolio-contact-methods .contact-method-card:focus-within { transform: translateY(-3px); border-color: var(--color-border-strong); box-shadow: var(--shadow-sm); }
+.portfolio-single-page .contact-method-card__icon { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; margin-block-end: var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface-elevated); color: var(--color-text-muted); transition: background-color 200ms var(--ease-standard), color 200ms var(--ease-standard), border-color 200ms var(--ease-standard); }
+.portfolio-single-page .contact-method-card__icon svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.portfolio-single-page .contact-method-card__icon .contact-method-card__icon-fill { fill: currentColor; stroke: none; }
+.portfolio-single-page .contact-method-card:hover .contact-method-card__icon,
+.portfolio-single-page .contact-method-card:focus-within .contact-method-card__icon { border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border)); background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface-elevated)); color: var(--color-primary); }
+.portfolio-single-page .portfolio-contact-methods .contact-method-card a { text-underline-offset: .2em; transition: color 180ms var(--ease-standard); }
+.portfolio-single-page .portfolio-contact-methods .contact-method-card a:hover { color: var(--color-secondary); }
 .portfolio-single-page .badge { background: transparent; }
 
 /* Final hero proportions. */
@@ -349,6 +359,7 @@
 @media (max-width: 39.9375rem) {
   .portfolio-skill-grid { grid-template-columns: 1fr; }
   .portfolio-contact-methods { grid-template-columns: 1fr; }
+  .portfolio-single-page .portfolio-contact-methods .contact-method-card { min-height: 0; }
   .portfolio-facts { grid-template-columns: 1fr; }
   .portfolio-single-page .home-hero__grid { grid-template-columns: 1fr; }
   .portfolio-single-page .home-hero { padding-block: 4rem; }
